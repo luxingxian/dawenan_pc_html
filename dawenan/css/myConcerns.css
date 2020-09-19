@@ -1,0 +1,97 @@
+.subject_middle .middle_left {
+    width: 880px;
+}
+
+.author_head_portrait{
+    display:inline-table;
+}
+
+.author_head_portrait .user_head{
+    vertical-align: -webkit-baseline-middle;
+}
+
+.enter_TAhome{
+    display: inline-block;
+}
+
+.subject_middle .all_authors_card_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 20px 0 20px 10px;
+    background-color: white;
+    box-shadow: 0 0 5px #f3f3f3;
+}
+
+.subject_middle .all_authors_card_box .all_authors_card_details {
+    display: flex;
+    width: 100%;
+    padding: 20px 0 0px 20px;
+}
+
+.subject_middle .all_authors_card_box .all_authors_card_details .all_authors_card_details_content {
+    flex: 3;
+    border-bottom: 1px #eeeeee solid;
+    margin-left: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.all_authors_card_box .change_follow {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+}
+
+.subject_middle .all_authors_card_box .all_authors_card_details .all_authors_card_details_content li {
+    width: 100%;
+    font-size: 12px;
+}
+
+.subject_middle .all_authors_card_box .all_authors_card_details .all_authors_card_details_content .all_authors_card_details_name {
+    font-size: 14px;
+    color: #222222;
+    margin-right: 10px;
+    font-family: Microsoft YaHei-Bold;
+}
+
+.subject_middle .all_authors_card_box .all_authors_card_details .all_authors_card_details_content .classification_label a {
+    margin-right: 10px;
+}
+
+.subject_middle .all_authors_card_box .all_authors_card_details .all_authors_card_details_content .classification_label .number_style {
+    color: #222222;
+}
+
+
+/* 他的主页.关注,私信 */
+
+.myHomepage_box .myHomepage_user_large_head .Ta_introduction {
+    margin: 10px auto !important;
+}
+
+.myHomepage_box .myHomepage_user_large_head .attention  a{
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px #57cdd4 solid;
+}
+
+/* 关注 */
+
+.myHomepage_box .myHomepage_user_large_head  #follow_ta {
+    color: #ffffff;
+    background-color: #57cdd4;
+    margin-right: 10px;
+}
+
+/* 私信 */
+.myHomepage_box .myHomepage_user_large_head  #contact_ta {
+    color: #57cdd4;
+    background-color: #ffffff;
+}

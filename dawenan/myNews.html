@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大文案</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./css/myNews.css">
+    <link rel="stylesheet" type="text/css" href="./css/commont.css">
+    <script src="./js/jquery-2.0.2.js"> </script>
+    <script src="./js/commont.js"></script>
+    <script src="./js/myNews.js"></script>
+    <script src="./font/iconfont.js"></script>
+</head>
+
+<body>
+    <div class="main_subject">
+        <div class="subject_box">
+            <!-- 头部 -->
+            <div class="subject_header">
+                <!-- 公司logo -->
+                <div class="header_logo">
+                    <svg class="icon" aria-hidden="true" class="img_logo">
+                        <use xlink:href="#iconlogo" class="img_logo"></use>
+                    </svg>
+                </div>
+                <!-- 主菜单栏 -->
+                <ul class="header_menu">
+                    <li>
+                        <a href="./index.html" title="首页" class="shouye">首页 </a>
+
+                    </li>
+                    <li>
+                        <a href="./towntalk.html" title="话题" class="huati">话题</a>
+                    </li>
+                    <li>
+                        <a href="./beautifulPicture.html" title="精选" class="jingxuan">精选</a>
+                    </li>
+
+                </ul>
+
+                <!-- 搜索框 -->
+                <div class="header_input">
+                    <input type="text" oninput="sosocheckTxt()" name="soso_input" onfocus="sosoGetFous()"
+                        onblur="sosoLoseFous()" id="soso" value="微信朋友圈文案">
+                    <!-- <input type="button" value="搜索" id="btn_soso"> -->
+                    <a title="搜索" id="btn_soso">搜索</a>
+                    <ul class="input_hover_content" id="recommend">
+                        <a href="./soso.html" class="more">查看完整热搜榜</a>
+                        <a><span class="hot">1</span>精选热门话题</a>
+                        <a><span class="hot">2</span>#拍下你面前的东西</a>
+                        <a><span class="hot">3</span>#写给空气的情话</a>
+                        <a><span>4</span>你本来就很美</a>
+                        <a><span>5</span>你来人间一趟 你要看看太阳</a>
+                    </ul>
+                    <ul class="input_hover_content" id="search">
+                        <a>#你来人间一趟 你要看看太阳</a>
+                        <a>#精选热门话题</a>
+                        <a>#拍下你面前的东西</a>
+                        <a>你来人间一趟 你要看看太阳</a>
+                        <a class="soso_user_message" href="./soso.html">
+                            <img src="./img/tx.jpeg" alt="" class="user_head">
+                            <span class="soos_user_name">11</span>
+                        </a>
+                    </ul>
+
+                </div>
+                <!-- 发布作品 -->
+                <a href="./releaseWork.html" title="发布作品" class="release_works" id="btn_release"> <i
+                        class="iconfont  iconicon_cz"></i> 发布作品</a>
+
+
+
+                <!-- 登录与注册 -->
+                <ul class="header_btn" id="login_or_register_panel">
+                    <li><a title="登录" id="login">登录</a></li>
+                    <li>|</li>
+                    <li><a title="注册" id="register">注册</a></li>
+                </ul>
+
+
+
+
+                <div class="user_header" id="user_header_panel">
+                    <div class="flex_user_head">
+                        <span class="news_num">3</span>
+                        <img src="./img/tx.jpeg" alt="" class="img_logo" id="user_logo">
+                        <span class="user_name">大文案</span>
+                    </div>
+
+                    <!-- 用户菜单面板 -->
+                    <div class="user_panel">
+                        <div class="arrow"></div>
+                        <ul class="content">
+                            <li><a href="./myHome.html" title="我的主页">我的主页</a></li>
+                            <li><a href="./myNews.html" title="我的信息" class="mynews seled_active" >我的信息<span class="news_num">3</span> </a></li>
+                            <li><a href="./drafts.html" title="草稿箱">草稿箱(2)</a></li>
+                            <li><a href="./myInformation.html" title="资料与账户">资料与账户</a></li>
+                            <li><a title="退出" id="signOut" href="javascript:void(0);" onclick="signOut()">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- 中间 -->
+        <div class="subject_middle_box">
+            <div class="subject_middle">
+                <div class="news_box">
+                    <div class="news_box_left">
+                            <a class="user_item">
+                                <div class="user_item_left">
+                                    <span class="news_num">3</span>
+                                    <svg class="icon" aria-hidden="true" style="font-size: 24px;">
+                                        <use xlink:href="#iconlogo"></use>
+                                    </svg>
+                                    <div class="news_user_message">
+                                        <p class="news_contacts_name">系统提醒</p>
+                                        <p class="news_message">他人回复给用户的信息他人回复给用户的信息</p>
+                                    </div>
+                                </div>
+                                <span class="news_time">12:12</span>
+                            </a>
+                            <a class="user_item">
+                                <div class="user_item_left">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <div class="news_user_message">
+                                        <p class="news_contacts_name">用户甲</p>
+                                        <p class="news_message">他人回复给用户的信息</p>
+                                    </div>
+                                </div>
+                                <span class="news_time">12:12</span>
+                            </a>
+
+                    </div>
+                    <p class="talking_contacts ">快乐</p>
+                    <div class="message_area ">
+                        <div class="myreply ">
+                            <p class="myreply_content ">
+                                <span class="real_myreply_content ">用户主动发的信息</span>
+                                <i class="iconfont iconarrow-fold "></i>
+                            </p>
+                            <img src="./img/tx.jpeg " alt=" " class="user_head ">
+                        </div>
+                        <div class="other_reply ">
+                            <img src="./img/tx.jpeg " alt=" " class="user_head ">
+                            <p class="other_reply_content ">
+                                <span class="real_other_reply_content ">他人回复给用户的信息</span>
+                                <i class="iconfont iconarrow-fold "></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="textarea_box ">
+                        <textarea maxlength="500 " oninput="checkTxt() " onfocus="getFous() " onblur="loseFous() "
+                            class="reply_message_area ">请输入回复内容</textarea>
+                        <p class="words_nums "><span class="already_write_words_num ">0</span> /500</p>
+                        <span class="reply_btn">立即回复</span>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- 尾部 -->
+            <div class="subject_foot ">
+                <ul class="foot_btn ">
+                    <li><a href=" " title="联系我们 ">联系我们</a></li>
+                    <li>|</li>
+                    <li><a href=" " title="微信公众号 ">微信公众号</a></li>
+                </ul>
+                <p class="foot_message ">
+                    xxx公司版权所有@2017-2020 沪公网安备31010102002072号 增强电信业务经营许可证:沪B2-20180610自营经营者信息
+                </p>
+            </div>
+
+            <!-- 返回顶部 -->
+            <div class="return_top ">
+                <a title="返回顶部 ">
+                    <svg class="icon " aria-hidden="true ">
+                        <use xlink:href="#iconhuidaodingbu "></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

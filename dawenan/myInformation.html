@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大文案</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./css/myInformation.css">
+    <link rel="stylesheet" type="text/css" href="./css/commont.css">
+    <link rel="stylesheet" href="./css/cropper.min.css">
+    <link rel="stylesheet" href="./css/ImgCropping.css">
+    <script src="./js/jquery-2.0.2.js"> </script>
+    <script src="./js/commont.js"></script>
+    <script src="./js/myInformation.js"></script>
+    <script src="./font/iconfont.js"></script>
+    <script src="./js/cropper.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main_subject">
+        <div class="subject_box">
+            <!-- 头部 -->
+            <div class="subject_header">
+                <!-- 公司logo -->
+                <div class="header_logo">
+                    <svg class="icon" aria-hidden="true" class="img_logo">
+                        <use xlink:href="#iconlogo" class="img_logo"></use>
+                    </svg>
+                </div>
+                <!-- 主菜单栏 -->
+                <ul class="header_menu">
+                    <li>
+                        <a href="./index.html" title="首页" class="shouye">首页 </a>
+
+                    </li>
+                    <li>
+                        <a href="./towntalk.html" title="话题" class="huati">话题</a>
+                    </li>
+                    <li>
+                        <a href="./beautifulPicture.html" title="精选" class="jingxuan">精选</a>
+                    </li>
+
+                </ul>
+
+                <!-- 搜索框 -->
+                <div class="header_input">
+                    <input type="text" oninput="sosocheckTxt()" name="soso_input" onfocus="sosoGetFous()"
+                        onblur="sosoLoseFous()" id="soso" value="微信朋友圈文案">
+                    <!-- <input type="button" value="搜索" id="btn_soso"> -->
+                    <a title="搜索" id="btn_soso">搜索</a>
+                    <ul class="input_hover_content" id="recommend">
+                        <a href="./soso.html" class="more">查看完整热搜榜</a>
+                        <a><span class="hot">1</span>精选热门话题</a>
+                        <a><span class="hot">2</span>#拍下你面前的东西</a>
+                        <a><span class="hot">3</span>#写给空气的情话</a>
+                        <a><span>4</span>你本来就很美</a>
+                        <a><span>5</span>你来人间一趟 你要看看太阳</a>
+                    </ul>
+                    <ul class="input_hover_content" id="search">
+                        <a>#你来人间一趟 你要看看太阳</a>
+                        <a>#精选热门话题</a>
+                        <a>#拍下你面前的东西</a>
+                        <a>你来人间一趟 你要看看太阳</a>
+                        <a class="soso_user_message" href="./soso.html">
+                            <img src="./img/tx.jpeg" alt="" class="user_head">
+                            <span class="soos_user_name">11</span>
+                        </a>
+                    </ul>
+
+                </div>
+                <!-- 发布作品 -->
+                <a href="./releaseWork.html" title="发布作品" class="release_works" id="btn_release"> <i
+                        class="iconfont  iconicon_cz"></i> 发布作品</a>
+
+
+
+
+                <!-- 登录与注册 -->
+                <ul class="header_btn" id="login_or_register_panel">
+                    <li><a title="登录" id="login">登录</a></li>
+                    <li>|</li>
+                    <li><a title="注册" id="register">注册</a></li>
+                </ul>
+
+
+
+
+                <div class="user_header" id="user_header_panel">
+                    <div class="flex_user_head">
+                        <span class="news_num">3</span>
+                        <img src="./img/tx.jpeg" alt="" class="img_logo" id="user_logo">
+                        <span class="user_name">大文案</span>
+                    </div>
+
+
+                    <!-- 用户菜单面板 -->
+                    <div class="user_panel">
+                        <div class="arrow"></div>
+                        <ul class="content">
+                            <li><a href="./myHome.html" title="我的主页">我的主页</a></li>
+                            <li><a href="./myNews.html" title="我的信息" class="mynews">我的信息<span class="news_num">3</span> </a></li>
+                            <li><a href="./drafts.html" title="草稿箱">草稿箱(2)</a></li>
+                            <li><a href="./myInformation.html" title="资料与账户" class="seled_active">资料与账户</a></li>
+                            <li><a title="退出" id="signOut" href="javascript:void(0);" onclick="signOut()">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="myHomepage_box">
+            <ul class="myHomepage_user_large_head">
+                <a id="changeImg" title="更换头像">
+                    <img src="./img/tx.jpeg" alt="" class="user_large_head" id="finalImg">
+                    <span class="change_user_head">更换</span>
+                </a>
+                <li>
+                    <span id="signatureInput" class="personal_signature">美美的鱼香肉丝美美的鱼香</span>
+                </li>
+                <li class="myHomepage_personal_brief_introduction">
+                    每天开开心每天开开心每天开开心每天开开心
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- 中间 -->
+        <div class="subject_middle_box">
+            <div class="subject_middle">
+                <p class="information_title">基本资料 <a class="submit" id="submitData">确认提交</a> </p>
+                <ul class="information_basic">
+                    <li>
+                        <span class="information_margin_right">性别</span>
+                        <label class="information_margin_right">
+                            <input type="radio" name="sex" id="sex_man" class="sex_style" value="男">男
+                        </label>
+                        <label class="information_margin_right">
+                            <input type="radio" name="sex" id="sex_women" class="sex_style" value="女">女
+                        </label>
+                    </li>
+                    <li>
+                        <span class="information_margin_right">昵称</span>
+                        <input type="text" name="user_name" class="information_input" value="请输入昵称(12字内)"
+                            maxlength="12">
+                    </li>
+                    <li>
+                        <span class="information_margin_right">手机</span>
+                        <input type="text" name="user_phone" class="information_input" value="请输入常用手机号">
+                    </li>
+                    <li>
+                        <span class="information_margin_right">地区</span>
+                        <input type="text" name="user_address" class="information_input" value="请输入您所在的地区">
+                    </li>
+                    <li>
+                        <span class="information_margin_right">个人签名</span>
+                        <input type="text" name="user_qianming" class="information_input qianming_left"
+                            value="请输入个人签名,让更多读者可以认识您~">
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- 尾部 -->
+            <div class="subject_foot">
+                <ul class="foot_btn">
+                    <li><a href="" title="联系我们">联系我们</a></li>
+                    <li>|</li>
+                    <li><a href="" title="微信公众号">微信公众号</a></li>
+                </ul>
+                <p class="foot_message">
+                    xxx公司版权所有@2017-2020 沪公网安备31010102002072号 增强电信业务经营许可证:沪B2-20180610自营经营者信息
+                </p>
+            </div>
+
+            <!-- 返回顶部 -->
+            <div class="return_top">
+                <a title="返回顶部">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#iconhuidaodingbu"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="mask_content_dislike">
+            <p class="result_title">修改信息成功！</p>
+        </div>
+
+    </div>
+    <!--图片裁剪框 start-->
+    <div style="display: none;" class="tailoring-container">
+        <div class="black-cloth" onclick="closeTailor(this)"></div>
+        <div class="tailoring-content">
+            <div class="tailoring-content-one">
+                <label title="上传图片" for="chooseImg" class="l-btn choose-btn">
+                    <input type="file" accept="image/jpg,image/jpeg,image/png" name="file" id="chooseImg" class="hidden"
+                        onchange="selectImg(this)">
+                    选择图片
+                </label>
+                <div class="close-tailoring" onclick="closeTailor(this)">×</div>
+            </div>
+            <div class="tailoring-content-two">
+                <div class="tailoring-box-parcel">
+                    <img id="tailoringImg">
+                </div>
+                <div class="preview-box-parcel">
+                    <p>图片预览：</p>
+                    <div class="circular previewImg"></div>
+                </div>
+            </div>
+            <div class="tailoring-content-three">
+                <div>
+                    <button class="l-btn cropper-reset-btn">复位</button>
+                    <button class="l-btn cropper-rotate-btn">旋转</button>
+                    <button class="l-btn cropper-scaleX-btn">换向</button>
+                </div>
+                <div>
+                    <button class="l-btn sureCut" id="sureCut">确定</button>
+                    <button class="l-btn" id="closeCut">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--图片裁剪框 end-->
+    <script>
+        //弹出框水平垂直居中
+        (window.onresize = function () {
+            var win_height = $(window).height();
+            var win_width = $(window).width();
+            if (win_width <= 768) {
+                $(".tailoring-content").css({
+                    "top": (win_height - $(".tailoring-content").outerHeight()) / 2,
+                    "left": 0
+                });
+            } else {
+                $(".tailoring-content").css({
+                    "top": (win_height - $(".tailoring-content").outerHeight()) / 2,
+                    "left": (win_width - $(".tailoring-content").outerWidth()) / 2
+                });
+            }
+        })();
+    </script>
+</body>
+
+
+</html>

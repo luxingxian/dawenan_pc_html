@@ -1,0 +1,217 @@
+.subject_middle .middle_left .card_box {
+    width: 880px;
+    margin: 0 auto;
+}
+
+.subject_middle .middle_left .card_box .card {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 5px #f3f3f3;
+    transform: translate3d(0, -4px, 0);
+}
+
+
+/* 作者个人信息与发布时间 */
+
+.subject_middle .middle_left .card_box .card .author_message {
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    background-color: rgb(246, 246, 246);
+    padding-bottom: 10px;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .author_details {
+    width: 100%;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .author_details .release_time {
+   color: #999999;
+   font-size: 12px;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .author_details .release_time::before {
+    content: "发布时间 : ";
+}
+
+.subject_middle .middle_left .card_box .card .author_name {
+    font-size: 14px;
+    color: #222222;
+    padding-right: 10px;
+}
+
+.subject_middle .middle_left .card_box .card .author_names {
+    font-size: 14px;
+    color: #666666;
+    padding-right: 10px;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .author_details p {
+    width: 100%;
+    line-height: 16PX;
+}
+
+
+
+.subject_middle .middle_left .card_box .card .text .text_box {
+    font-size: 16px;
+    color: #222222;
+    line-height: 32px;
+    /* padding-bottom: 10px; */
+}
+
+
+/* 文案文本内容的出处 */
+
+.subject_middle .middle_left .card_box .card .text .author_source {
+    font-size: 14px;
+    margin-right: -20px;
+    margin: 20px 0;
+    color: #245a5d;
+}
+
+.subject_middle .middle_left .card_box .card .text .author_source::before {
+    content: '作者/出处:';
+    /* margin-right:-5px */}
+
+
+/* 文案文本内容参与的话题 */
+
+.subject_middle .middle_left .card_box .card .text .text_label {
+    margin: 10px 0;
+    display:table;
+    font-size: 14px;
+    color: #222222 !important;
+}
+
+.subject_middle .middle_left .card_box .card .text .text_label::before {
+    content: '话题：#';
+    /* margin-right: -2px; */
+    color: #666666;
+}
+
+/* 文案配图 */
+
+.subject_middle .middle_left .card_box .card .text .show_big_img {
+    display: table;
+}
+
+.subject_middle .middle_left .card_box .card .text .text_img{
+    width: 200px;
+    height: 200px;
+}
+
+.subject_middle .middle_left .card_box .card .text .text_img img:hover {
+    opacity: 0.6;
+}
+
+
+/* 评论区域 */
+
+.card .comment {
+    margin-top: 15px;
+    border-top: 1px #eeeeee solid;
+}
+
+.subject_middle .middle_left .card_box .card .text_box {
+    margin: 0 !important;
+}
+
+
+/* 评论头部 */
+
+.card .comment .comment_header {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.middle_left .comment .comment_header .comment_input_release {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    width: 80px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #57cdd4;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 36px;
+    z-index: 33;
+    cursor: pointer;
+    display: none;
+}
+
+.card .comment .enter_comment {
+    width: 800px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #f6f6f6;
+    resize: none;
+    margin: 0 10px;
+    padding: 5px 100px 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #666666;
+    font-size: 12px;
+    transition: height 0.4s;
+}
+
+.card .comment .enter_comment::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* 查看大图区域 */
+
+.big_img_box {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 800px;
+    margin: 0 auto;
+    z-index: 333;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.big_img_box a {
+    position: absolute;
+    right: -20vw;
+    top: 5%;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background-color: #666666;
+}
+
+.big_img_box a:hover {
+    color: red;
+}
+
+.show {
+    display: flex !important;
+}
+
+.big_img_url {
+    width: 800px;
+}
+.details_follow{
+    margin-left: 30px;
+ }

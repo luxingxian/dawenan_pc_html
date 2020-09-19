@@ -1,0 +1,145 @@
+/* 左侧话题区域 */
+.towntalk_box {
+    width: 880px;
+    column-count: 3;
+    padding-bottom: 20px;
+}
+
+/* 每一个话题块 */
+.towntalk_box_item {
+    margin: 20px 0 0 0;
+    width: 280px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    box-sizing: border-box;
+    break-inside: avoid;
+    border: 1px solid #e0e0e0;
+
+}
+
+/* 话题题目 */
+.towntalk_box_item_title {
+    font-size: 16px;
+    color: #57cdd4;
+    font-weight: bold;
+}
+
+.towntalk_box_item_title::before {
+    content: "#";
+}
+
+/* 查看更多话题回复 */
+.towntalk_box_item .to_show_more {
+    font-size: 12px;
+    color: #57cdd4;
+    float: right;
+}
+
+/* 参与人数，浏览量 */
+.join_user {
+    padding-bottom: 20px;
+    border-bottom: 1px #eeeeee solid;
+}
+
+.join_num,
+.views_num {
+    font-size: 12px;
+    color: #888888;
+}
+
+.join_num::before {
+    content: "参与人数";
+    color: #999999;
+}
+
+.views_num::before {
+    content: "浏览量";
+    color: #999999;
+}
+
+/* 每一个话题下的用户资料 */
+.user_details_item {
+    padding: 10px 0 0 0;
+
+}
+
+.towntalk_box_item:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .1);
+}
+
+.user_details_item a {
+    font-size: 14px;
+    color: #222222;
+    display: table;
+    /* word-break: keep-all; */
+}
+
+
+/* 用户对话题的参与评论 */
+.user_content {
+    padding-left: 30px;
+    /* font-size: 16px; */
+    /* display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow : hidden;
+  text-overflow: ellipsis; */
+}
+.user_content:hover{
+  color: #666666;
+}
+
+
+.user_content .source {
+    font-size: 12px;
+    color: #999999;
+}
+
+.user_content .source::before {
+    content: '——';
+}
+
+.enter_user_home:hover .user_head{
+ opacity: 0.6;
+}
+.enter_user_home .user_name {
+    margin-left: 5px;
+    vertical-align: super;
+    color: #666666;
+}
+
+
+/* 右侧话题分类 */
+.middle_right .talk_item {
+    margin: 5px 0;
+}
+.middle_right .talk_item .talk_item_title {
+    border-left: 3px #57cdd4 solid;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.middle_right .copyWriting_box_content {
+    padding: 10px 0;
+}
+.middle_right .talk_item .talk_item_dails {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.middle_right .talk_item .talk_item_dails a {
+    font-size: 12px;
+    color: #666666;
+    margin: 5px 15px 5px 0;
+    display: inline-block;
+}
+.middle_right .talk_item .talk_item_dails a::before {
+    content: "#";
+}
+.middle_right .talk_item .talk_item_dails a:hover {
+    color: #57cdd4;
+}

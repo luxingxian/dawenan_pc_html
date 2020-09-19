@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大文案</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./css/releaseWork.css">
+    <link rel="stylesheet" type="text/css" href="./css/commont.css">
+    <script src="./js/jquery-2.0.2.js"> </script>
+    <script src="./js/releaseWork.js"></script>
+    <script src="./js/commont.js"></script>
+    <script src="./font/iconfont.js"></script>
+    <link href="./css/jquery.atwho.css" rel="stylesheet">
+    <script src="./js/jquery.atwho.js"></script>
+    <script src="./js/jquery.caret.js"></script>
+
+</head>
+
+<body>
+    <div class="main_subject">
+        <div class="subject_box">
+            <div class="subject_header">
+                <!-- 公司logo -->
+                <div class="header_logo">
+                    <svg class="icon" aria-hidden="true" class="img_logo">
+                        <use xlink:href="#iconlogo" class="img_logo"></use>
+                    </svg>
+                </div>
+                <!-- 主菜单栏 -->
+                <ul class="header_menu">
+                    <li>
+                        <a href="./index.html" title="首页" class="shouye">首页 </a>
+
+                    </li>
+                    <li>
+                        <a href="./towntalk.html" title="话题" class="huati">话题</a>
+                    </li>
+                    <li>
+                        <a href="./beautifulPicture.html" title="精选" class="jingxuan">精选</a>
+                    </li>
+
+                </ul>
+
+                <!-- 搜索框 -->
+                <div class="header_input">
+                    <input type="text" oninput="sosocheckTxt()" name="soso_input" onfocus="sosoGetFous()"
+                        onblur="sosoLoseFous()" id="soso" value="微信朋友圈文案">
+                    <a title="搜索" id="btn_soso">搜索</a>
+                    <ul class="input_hover_content" id="recommend">
+                        <a href="./soso.html" class="more">查看完整热搜榜</a>
+                        <a><span class="hot">1</span>精选热门话题</a>
+                        <a><span class="hot">2</span>#拍下你面前的东西</a>
+                        <a><span class="hot">3</span>#写给空气的情话</a>
+                        <a><span>4</span>你本来就很美</a>
+                        <a><span>5</span>你来人间一趟 你要看看太阳</a>
+                    </ul>
+                    <ul class="input_hover_content" id="search">
+                        <a>#你来人间一趟 你要看看太阳</a>
+                        <a>#精选热门话题</a>
+                        <a>#拍下你面前的东西</a>
+                        <a>你来人间一趟 你要看看太阳</a>
+                        <a class="soso_user_message" href="./soso.html">
+                            <img src="./img/tx.jpeg" alt="" class="user_head">
+                            <span class="soos_user_name">11</span>
+                        </a>
+                    </ul>
+
+                </div>
+                <!-- 发布作品 -->
+                <a href="./releaseWork.html" title="发布作品" class="release_works" id="btn_release"> <i
+                        class="iconfont  iconicon_cz"></i> 发布作品</a>
+
+
+
+
+                <!-- 登录与注册 -->
+                <ul class="header_btn" id="login_or_register_panel">
+                    <li><a title="登录" id="login">登录</a></li>
+                    <li>|</li>
+                    <li><a title="注册" id="register">注册</a></li>
+                </ul>
+
+
+
+
+                <div class="user_header" id="user_header_panel">
+                    <!-- 登录成功用户头像 -->
+                    <div class="flex_user_head">
+                        <span class="news_num">3</span>
+                        <img src="./img/tx.jpeg" alt="" class="img_logo" id="user_logo">
+                        <span class="user_name">大文案</span>
+                    </div>
+
+
+
+                    <!-- 用户菜单面板 -->
+                    <div class="user_panel">
+                        <div class="arrow"></div>
+                        <ul class="content">
+                            <li><a href="./myHome.html" title="我的主页">我的主页</a></li>
+                            <li><a href="./myNews.html" title="我的信息" class="mynews">我的信息<span class="news_num">3</span>
+                                </a></li>
+                            <li><a href="./drafts.html" title="草稿箱">草稿箱(2)</a></li>
+                            <li><a href="./myInformation.html" title="资料与账户">资料与账户</a></li>
+                            <li><a title="退出" id="signOut" href="javascript:void(0);" onclick="signOut()">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- 中间 -->
+        <div class="subject_middle_box">
+            <div class="current_nav">
+                发布作品
+            </div>
+            <div class="subject_middle">
+
+                <div class="release_workbench work_box">
+                    <div class="enter_text">
+                        <div style="background-color: rgb(246, 246, 246);">
+                            <textarea maxlength="200" oninput="checkTxt()" onfocus="getFous('workbench_text_area')"
+                                onblur="loseFous('workbench_text_area')" class="text_area" id="workbench_text_area"
+                                placeholder="请输入正文(200字内包括标点符号),句尾请添加标点,不带空格,换行。"></textarea>
+                            <script>
+                                $('#workbench_text_area').atwho({
+                                    at: "@",
+                                    data: ['Peter', 'Tom', 'Anne'],
+                                    startWithSpace: false, //是否已空格开始
+                                    displayTpl: "<li>${name}${name}</li>", //显示模板
+                                    insertTpl: "${atwho-at}${name}", //插入模板
+                                })
+                            </script>
+                            <ul class="content-img-list">
+                                <label class="content-img-list-item add_img_item">
+                                    <a title="添加图片" class="iconfont iconicon-test"> </a>
+                                    <input type="file" accept="image/*" name="" class="add_picture_input">
+                                    <img class="change_img" src="" alt="">
+                                </label>
+                                <p class="remaining_words">
+                                    还可以输入
+                                    <span id="remaining_words_length">
+                                        200
+                                    </span> 字
+                                </p>
+                            </ul>
+                        </div>
+                        <ul class="source_box">
+                            <span>参与话题 :</span>
+                            <input type="text" name="" id="select_towntalk" onfocus="getFous('select_towntalk')"
+                                onblur="loseFous('select_towntalk')">
+                            <ul class="select_towntalk_box">
+                                <li>
+                                    <a class="join_the_talk">
+                                        <span class="towntalk_title">下雨</span>
+                                        <span class="join_num">(0)</span>
+                                    </a>
+                                    <a class="create_new_talk">新建话题</a>
+                                </li>
+                                <li>
+                                    <a class="join_the_talk">
+                                        <span class="towntalk_title">高考</span>
+                                        <span class="join_num">(12)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="join_the_talk">
+                                        <span class="towntalk_title">爬山</span>
+                                        <span class="join_num">(12)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="join_the_talk">
+                                        <span class="towntalk_title">毕业</span>
+                                        <span class="join_num">(12)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="join_the_talk">
+                                        <span class="towntalk_title">中考</span>
+                                        <span class="join_num">(12)</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </ul>
+                        <ul class="source_box">
+                            <span>作者 / 出处:</span>
+                            <input type="text" name="" id="select_author" onfocus="getFous('select_author')"
+                                onblur="loseFous('select_author')">
+                            <div class="selection_box">
+                                <div class="bg-primary">
+                                    朝代:
+                                    <select class="sel" id="selA">
+                                        <option>请选择朝代</option>
+                                        <option>唐代</option>
+                                    </select> 作者:
+                                    <select class="sel" id="selB">
+                                        <option>请选择作者</option>
+                                        <option>李白</option>
+                                        <option>作者2</option>
+                                    </select>
+                                </div>
+                                <div class="tuijian_neirong">
+                                    <li>推荐作品</li>
+                                    <li>推荐作品</li>
+                                    <li>推荐作品</li>
+                                    <li>推荐作品</li>
+                                    <li>推荐作品</li>
+                                    <li>推荐作品</li>
+                                    <li>推荐作品</li>
+                                </div>
+                            </div>
+
+                        </ul>
+                        <p class="submit_box">
+                            <a class="submit_article" id="submit_article_btn"> 提交</a>
+                            <span class="submit_tips">草稿已自动保存</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 尾部 -->
+            <div class="subject_foot">
+                <ul class="foot_btn">
+                    <li><a href="" title="联系我们">联系我们</a></li>
+                    <li>|</li>
+                    <li><a href="" title="微信公众号">微信公众号</a></li>
+                </ul>
+                <p class="foot_message">
+                    xxx公司版权所有@2017-2020 沪公网安备31010102002072号 增强电信业务经营许可证:沪B2-20180610自营经营者信息
+                </p>
+            </div>
+
+            <!-- 返回顶部 -->
+            <div class="return_top">
+                <a title="返回顶部">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#iconhuidaodingbu"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+        <div id="mask"></div>
+        <!-- 提交成功状态框 -->
+        <div class="submit_state" id="submit_success">
+            <span class="iconfont icontijiaochenggong"></span>
+            <div class="submit_state_box">
+                <p class="submit_state_title">提交成功</p>
+                <p class="submit_state_tips">您提交的内容已成功进入审核队列,我们将尽快处理~</p>
+            </div>
+
+        </div>
+
+        <!-- 提交失败状态框 -->
+        <div class="submit_state" id="submit_fail">
+            <span class="iconfont iconshibaitishi"></span>
+            <div class="submit_state_box">
+                <p class="submit_state_title">提交失败</p>
+                <p class="submit_state_tips">您提交的内容未提交成功,请重新提交~</p>
+            </div>
+        </div>
+
+        <!-- 提交异常状态框 -->
+        <div class="submit_state" id="submit_abnormal">
+            <span class="iconfont icontixing"></span>
+            <div class="submit_state_box">
+                <p class="submit_state_title">敏感字提示</p>
+                <p class="submit_state_tips">请检查文案内容,确定无敏感字再提交</p>
+            </div>
+        </div>
+        <!--提示弹层 -->
+        <div id="mask_content_dislike">
+            <p class="result_title">我们已收到您的举报反馈</p>
+        </div>
+
+
+</body>
+
+</html>

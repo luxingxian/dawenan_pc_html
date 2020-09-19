@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大文案</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./css/towntalk.css">
+    <link rel="stylesheet" type="text/css" href="./css/commont.css">
+    <link rel="stylesheet" href="./css/Pagination.css">
+    <script src="./js/jquery-2.0.2.js"> </script>
+    <script src="./js/commont.js"></script>
+    <script src="./js/towntalk.js"></script>
+    <script src="./js/Pagination.js"></script>
+    <script src="./font/iconfont.js"></script>
+
+</head>
+
+<body>
+    <div class="main_subject">
+        <div class="subject_box">
+            <!-- 头部 -->
+            <div class="subject_header">
+                <!-- 公司logo -->
+                <div class="header_logo">
+                    <svg class="icon" aria-hidden="true" class="img_logo">
+                        <use xlink:href="#iconlogo" class="img_logo"></use>
+                    </svg>
+                </div>
+                <!-- 主菜单栏 -->
+                <ul class="header_menu">
+                    <li>
+                        <a href="./index.html" title="首页" class="shouye">首页 </a>
+
+                    </li>
+                    <li>
+                        <a href="./towntalk.html" title="话题" class="huati active">话题</a>
+                    </li>
+                    <li>
+                        <a href="./beautifulPicture.html" title="精选" class="jingxuan">精选</a>
+                    </li>
+
+                </ul>
+
+                <!-- 搜索框 -->
+                <div class="header_input">
+                    <input type="text" oninput="sosocheckTxt()" name="soso_input" onfocus="sosoGetFous()"
+                        onblur="sosoLoseFous()" id="soso" value="微信朋友圈文案">
+                    <a title="搜索" id="btn_soso">搜索</a>
+
+                    <ul class="input_hover_content" id="recommend">
+                        <a href="./soso.html" class="more">查看完整热搜榜</a>
+                        <a><span class="hot">1</span>精选热门话题</a>
+                        <a><span class="hot">2</span>#拍下你面前的东西</a>
+                        <a><span class="hot">3</span>#写给空气的情话</a>
+                        <a><span>4</span>你本来就很美</a>
+                        <a><span>5</span>你来人间一趟 你要看看太阳</a>
+                    </ul>
+                    <ul class="input_hover_content" id="search">
+                        <a>#你来人间一趟 你要看看太阳</a>
+                        <a>#精选热门话题</a>
+                        <a>#拍下你面前的东西</a>
+                        <a>你来人间一趟 你要看看太阳</a>
+                        <a class="soso_user_message" href="./soso.html">
+                            <img src="./img/tx.jpeg" alt="" class="user_head">
+                            <span class="soos_user_name">11</span>
+                        </a>
+                    </ul>
+
+
+
+
+
+                </div>
+                <!-- 发布作品 -->
+                <a href="./releaseWork.html" title="发布作品" class="release_works" id="btn_release"> <i
+                        class="iconfont  iconicon_cz"></i> 发布作品</a>
+
+
+                <!-- 登录与注册 -->
+                <ul class="header_btn" id="login_or_register_panel">
+                    <li><a title="登录" id="login">登录</a></li>
+                    <li>|</li>
+                    <li><a title="注册" id="register">注册</a></li>
+                </ul>
+
+
+
+
+                <div class="user_header" id="user_header_panel">
+                    <div class="flex_user_head">
+                        <span class="news_num">3</span>
+                        <img src="./img/tx.jpeg" alt="" class="img_logo" id="user_logo">
+                        <span class="user_name">大文案</span>
+                    </div>
+
+
+
+                    <!-- 用户菜单面板 -->
+                    <div class="user_panel">
+                        <div class="arrow"></div>
+                        <ul class="content">
+                            <li><a href="./myHome.html" title="我的主页">我的主页</a></li>
+                            <li><a href="./myNews.html" title="我的信息" class="mynews">我的信息<span class="news_num">3</span> </a></li>
+                            <li><a href="./drafts.html" title="草稿箱">草稿箱(2)</a></li>
+                            <li><a href="./myInformation.html" title="资料与账户">资料与账户</a></li>
+                            <li><a title="退出" id="signOut" href="javascript:void(0);" onclick="signOut()">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 中间 -->
+        <div class="subject_middle_box">
+            <div class="subject_middle">
+                <div>
+                    <div class="towntalk_box">
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+    
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《江城子·乙卯正月二十日夜记梦》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    大江东去，浪淘尽，千古风流人物。
+                                    故垒西边，人道是，三国周郎赤壁。
+                                    乱石穿空，惊涛拍岸，卷起千堆雪。
+                                    <p class="source">《念奴娇·赤壁怀古》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    芜然蕙草暮，飒尔凉风吹
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    芜然蕙草暮，飒尔凉风吹。
+                                    天秋木叶下，月冷莎鸡悲。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    坐愁群芳歇，白露凋华滋。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    芜然蕙草暮，飒尔凉风吹。
+                                    天秋木叶下，月冷莎鸡悲。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    芜然蕙草暮，飒尔凉风吹。
+                                    天秋木叶下，月冷莎鸡悲。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    大江东去，浪淘尽，千古风流人物。
+                                    <p class="source">《念奴娇·赤壁怀古》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    芜然蕙草暮，飒尔凉风吹。
+                                    天秋木叶下，月冷莎鸡悲。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    桃李待日开，荣华照当年。
+                                    东风动百物，草木尽欲言。
+                                    <p class="source">《长歌行》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    青天有月来几时，我今停杯一问之：
+                                    <p class="source">《把酒问月》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    芜然蕙草暮，飒尔凉风吹。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    芜然蕙草暮，飒尔凉风吹。
+                                    天秋木叶下，月冷莎鸡悲。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    芜然蕙草暮，飒尔凉风吹。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    芜然蕙草暮，飒尔凉风吹。
+                                    天秋木叶下，月冷莎鸡悲。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                        <div class="towntalk_box_item">
+                            <a class="towntalk_box_item_title" href="./towntalkDetails.html" target="_blank">惊艳你的句子</a>
+                            <div class="join_user">
+                                <span class="join_num">456.2w</span>
+                                <span class="views_num">1.2w</span>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    春阳如昨日，碧树鸣黄鹂。
+                                    <p class="source">《秋思》</p>
+                                </a>
+                            </div>
+                            <div class="user_details_item">
+                                <a class="enter_user_home" title="进入TA的个人主页">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <span class="user_name">寒栗</span>
+                                </a>
+                                <a class="user_content" title="进入详情">
+                                    杨家有女初长成，养在深闺人未识。
+                                    天生丽质难自弃，一朝选在君王侧。
+                                    回眸一笑百媚生，六宫粉黛无颜色。
+                                    <p class="source">《长恨歌》</p>
+                                </a>
+                            </div>
+                            <a class="to_show_more">查看更多</a>
+                        </div>
+                    </div>
+                    <div class="fenye" id="testPage">
+
+                    </div>
+
+                </div>
+
+                <div class="middle_right">
+                    <div class="popularity">
+                        <div class="title">
+                            <span class="popularity_title">话题分类</span>
+                        </div>
+                        <div class="copyWriting_box">
+                            <div class="copyWriting_box_content">
+                                <div class="talk_item">
+                                    <p class="talk_item_title">当前热门</p>
+                                    <div class="talk_item_dails">
+                                        <a>我的日常</a>
+                                        <a>学习打卡</a>
+                                        <a>学习打卡</a>
+                                        <a>毕业</a>
+                                        <a>高考</a>
+                                    </div>
+                                </div>
+                                <div class="talk_item">
+                                    <p class="talk_item_title">Vlog</p>
+                                    <div class="talk_item_dails">
+                                        <a>读书打卡</a>
+                                        <a>我的日常</a>
+                                        <a>学习打卡</a>
+                                        <a>高考</a>
+                                        <a>学习打卡</a>
+                                        <a>毕业</a>
+
+                                    </div>
+                                </div>
+                                <div class="talk_item">
+                                    <p class="talk_item_title">时尚</p>
+                                    <div class="talk_item_dails">
+                                        <a>男生改造计划</a>
+                                        <a>男士手表推荐</a>
+                                        <a>衣服搭配</a>
+                                    </div>
+                                </div>
+                                <div class="talk_item">
+                                    <p class="talk_item_title">当前热门</p>
+                                    <div class="talk_item_dails">
+                                        <a>我的日常</a>
+                                        <a>学习打卡</a>
+                                        <a>学习打卡</a>
+                                        <a>毕业</a>
+                                        <a>高考</a>
+                                    </div>
+                                </div>
+                                <div class="talk_item">
+                                    <p class="talk_item_title">Vlog</p>
+                                    <div class="talk_item_dails">
+                                        <a>读书打卡</a>
+                                        <a>我的日常</a>
+                                        <a>学习打卡</a>
+                                        <a>高考</a>
+                                        <a>学习打卡</a>
+                                        <a>毕业</a>
+
+                                    </div>
+                                </div>
+                                <div class="talk_item">
+                                    <p class="talk_item_title">时尚</p>
+                                    <div class="talk_item_dails">
+                                        <a>男生改造计划</a>
+                                        <a>男士手表推荐</a>
+                                        <a>衣服搭配</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 右三,微信公众号 -->
+                    <div class="weixin">
+                        <div class="title">
+                            <p class="popularity_title">微信公众号</p>
+                        </div>
+                        <div class="official_account">
+                            <img src="./img/weixin.png" alt="" style="width: 116px;height:116px;margin-left: 20px;">
+                            <div class="explain">
+                                <p class="saoma_follow">扫一扫关注微信公众号</p>
+                                <p class="tips">更多名言美句等你发现~</p>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- 尾部 -->
+        <div class="subject_foot">
+            <ul class="foot_btn">
+                <li><a href="" title="联系我们">联系我们</a></li>
+                <li>|</li>
+                <li><a href="" title="微信公众号">微信公众号</a></li>
+            </ul>
+            <p class="foot_message">
+                xxx公司版权所有@2017-2020 沪公网安备31010102002072号 增强电信业务经营许可证:沪B2-20180610自营经营者信息
+            </p>
+        </div>
+
+        <!-- 返回顶部 -->
+        <div class="return_top">
+            <a title="返回顶部">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#iconhuidaodingbu"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!-- 遮罩 -->
+    <div id="mask"></div>
+
+    <!-- 登录弹层 -->
+    <ul class="mask_content" id="mask_content_login">
+        <a class="iconfont  iconquxiaoguanbi mask_content_close"></a>
+        <li class="mask_content_title">大文案</li>
+        <li class="mask_content_explain mask_content_commont">
+            全国创业平台
+        </li>
+        <li class="mask_content_userNumber mask_content_commont">
+            123456789用户正在使用
+        </li>
+        <li class="mask_content_code">
+            <img src="./img/weixin.png" alt="" style="width:180px;height:180px">
+        </li>
+        <li class="mask_content_reminder">
+            <svg class="icon" aria-hidden="true" style="font-size: 40px;">
+                <use xlink:href="#iconweixin"></use>
+            </svg>
+            <span class="mask_content_commont">微信扫码登录</span>
+        </li>
+    </ul>
+
+    <!-- 注册弹层 -->
+    <ul class="mask_content" id="mask_content_register">
+        <a class="iconfont  iconquxiaoguanbi mask_content_close"></a>
+        <li class="mask_content_title">大文案</li>
+        <li class="mask_content_explain mask_content_commont">
+            全国创业平台
+        </li>
+        <li class="mask_content_userNumber mask_content_commont">
+            123456789用户正在使用
+        </li>
+        <li class="mask_content_code">
+            <img src="./img/weixin.png" alt="" style="width:180px;height:180px">
+        </li>
+        <li class="mask_content_reminder">
+            <svg class="icon" aria-hidden="true" style="font-size: 40px;">
+                <use xlink:href="#iconweixin"></use>
+            </svg>
+
+            <span class="mask_content_commont">微信扫码登录</span>
+        </li>
+        <li class="mask_content_existing_account">
+            <span class="mask_content_commont">已有账号?</span>
+            <a title="直接登录" class="mask_content_direct_login" id="direct_login">直接登录</a>
+            <!-- <span class="mask_content_direct_login" id="direct_login"> 直接登录</span> -->
+        </li>
+    </ul>
+
+
+</body>
+
+
+</html>

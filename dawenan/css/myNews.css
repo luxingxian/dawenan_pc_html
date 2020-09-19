@@ -1,0 +1,234 @@
+
+
+.subject_middle {
+    display: table !important;
+}
+
+
+.subject_middle .news_box {
+    min-height: 600px;
+    padding: 10px 10px 10px 0;
+    background-color: white;
+    box-shadow: 0 0 5px #f3f3f3;
+    transform: translate3d(0, -4px, 0);
+    margin-top: 40px;
+}
+
+.subject_middle .news_box .news_box_left {
+    width: 235px;
+    height: 610px;
+    float: left;
+    border-right: 1px #eeeeee solid;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+
+.subject_middle .news_box .news_box_left::-webkit-scrollbar {
+    width: 0px;
+}
+
+.subject_middle .news_box .news_box_left .user_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.subject_middle .news_box .news_box_left .user_item .user_item_left {
+    position: relative;
+}
+
+.subject_middle .news_box .news_box_left .user_item .user_item_left .news_num {
+    position: absolute;
+    left: 20px;
+    top: -5px;
+    min-width: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    background-color: #ff5033;
+    border-radius: 0.625rem;
+    color: #fff;
+    padding: 0 0.25rem;
+    box-sizing: border-box;
+}
+
+.subject_middle .news_box .news_box_left .user_item:hover {
+    background-color: #f6fcfd;
+}
+
+.subject_middle .news_box .news_box_left .user_item .news_user_message {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top
+}
+
+.subject_middle .news_box .news_box_left .user_item .news_contacts_name {
+    font-size: 14px;
+    color: #222222;
+    max-width: 142px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.subject_middle .news_box .news_box_left .user_item .news_message {
+    font-size: 12px;
+    color: #999999;
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.subject_middle .news_box .news_box_left .user_item .news_time {
+    font-size: 12px;
+    color: #999999;
+}
+
+
+
+/* 聊天界面 */
+.subject_middle .news_box .message_area {
+    width: 950px;
+    height: 400px;
+    float: right;
+    background-color: rgb(246, 246, 246);
+    overflow: auto;
+}
+
+
+
+
+/* 消息回复区域 */
+.subject_middle .news_box .textarea_box {
+    width: 950px;
+    height: 160px;
+    background-color: #ffffff;
+    float: right;
+    position: relative;
+}
+
+.subject_middle .news_box .talking_contacts {
+    padding: 10px 0;
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    font-size: 20px;
+    color: #666666;
+    width: 950px;
+    float: right;
+    border-bottom: 1px #eeeeee solid;
+}
+
+.subject_middle .news_box .message_area::-webkit-scrollbar {
+    width: 0px;
+}
+
+.subject_middle .news_box .message_area .myreply {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.subject_middle .news_box .message_area .myreply .myreply_content {
+    max-width: 300px;
+    word-break: break-all;
+    white-space: normal;
+    background-color: white;
+    padding: 5px 10px;
+    margin-right: 20px;
+    line-height: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #f3f3f3;
+    transform: translate3d(0, -4px, 0);
+    font-size: 14px;
+    color: #222222;
+    position: relative;
+}
+
+.subject_middle .news_box .message_area .myreply .myreply_content .iconarrow-fold {
+    position: absolute;
+    top: 4px;
+    right: -11px;
+    color: white;
+}
+
+
+
+/* 他人回复的消息 */
+.subject_middle .news_box .message_area .other_reply {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+.subject_middle .news_box .message_area .other_reply .iconarrow-fold {
+    position: absolute;
+    transform: rotate(180deg);
+    top: 4px;
+    left: -11px;
+    color: white;
+}
+
+
+.subject_middle .news_box .message_area .other_reply .other_reply_content {
+    max-width: 300px;
+    word-break: break-all;
+    white-space: normal;
+    background-color: white;
+    padding: 5px 10px;
+    margin-left: 20px;
+    line-height: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #f3f3f3;
+    transform: translate3d(0, -4px, 0);
+    font-size: 14px;
+    color: #222222;
+}
+
+.subject_middle .news_box .reply_message_area {
+    resize: none;
+    border: none;
+    outline: none;
+    width: 940px;
+    height: 60px;
+    line-height: 20px;
+    color: #222222;
+    float: right;
+    padding: 10px 0;
+    font-family: Microsoft YaHei;
+}
+
+.subject_middle .news_box .reply_message_area::-webkit-scrollbar {
+    width: 0px;
+}
+
+.subject_middle .news_box .words_nums {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #999999;
+}
+
+.subject_middle .news_box .reply_btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #57cdd4;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+}

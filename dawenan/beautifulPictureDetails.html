@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大文案</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./css/beautifulPictureDetails.css">
+    <link rel="stylesheet" type="text/css" href="./css/commont.css">
+
+    <script src="./js/jquery-2.0.2.js"> </script>
+    <script src="./js/beautifulPictureDetails.js"></script>
+    <script src="./js/commont.js"></script>
+    <script src="./font/iconfont.js"></script>
+
+</head>
+
+<body>
+    <div class="main_subject">
+        <div class="subject_box">
+            <!-- 头部 -->
+            <div class="subject_header">
+                <!-- 公司logo -->
+                <div class="header_logo">
+                    <svg class="icon" aria-hidden="true" class="img_logo">
+                        <use xlink:href="#iconlogo" class="img_logo"></use>
+                    </svg>
+                </div>
+                <!-- 主菜单栏 -->
+                <ul class="header_menu">
+                    <li>
+                        <a href="./index.html" title="首页" class="shouye">首页 </a>
+
+                    </li>
+                    <li>
+                        <a href="./towntalk.html" title="话题" class="huati">话题</a>
+                    </li>
+                    <li>
+                        <a href="./beautifulPicture.html" title="精选" class="jingxuan">精选</a>
+                    </li>
+
+                </ul>
+
+                <!-- 搜索框 -->
+                <div class="header_input">
+                    <input type="text" oninput="sosocheckTxt()" name="soso_input" onfocus="sosoGetFous()"
+                        onblur="sosoLoseFous()" id="soso" value="微信朋友圈文案">
+                    <!-- <input type="button" value="搜索" id="btn_soso"> -->
+                    <a title="搜索" id="btn_soso">搜索</a>
+                    <ul class="input_hover_content" id="recommend">
+                        <a href="./soso.html" class="more">查看完整热搜榜</a>
+                        <a><span class="hot">1</span>精选热门话题</a>
+                        <a><span class="hot">2</span>#拍下你面前的东西</a>
+                        <a><span class="hot">3</span>#写给空气的情话</a>
+                        <a><span>4</span>你本来就很美</a>
+                        <a><span>5</span>你来人间一趟 你要看看太阳</a>
+                    </ul>
+                    <ul class="input_hover_content" id="search">
+                        <a>#你来人间一趟 你要看看太阳</a>
+                        <a>#精选热门话题</a>
+                        <a>#拍下你面前的东西</a>
+                        <a>你来人间一趟 你要看看太阳</a>
+                        <a class="soso_user_message" href="./soso.html">
+                            <img src="./img/tx.jpeg" alt="" class="user_head">
+                            <span class="soos_user_name">11</span>
+                        </a>
+                    </ul>
+
+                </div>
+                <!-- 发布作品 -->
+                <a href="./releaseWork.html" title="发布作品" class="release_works" id="btn_release"> <i
+                        class="iconfont  iconicon_cz"></i> 发布作品</a>
+
+
+
+                <!-- 登录与注册 -->
+                <ul class="header_btn" id="login_or_register_panel">
+                    <li><a title="登录" id="login">登录</a></li>
+                    <li>|</li>
+                    <li><a title="注册" id="register">注册</a></li>
+                </ul>
+
+
+
+
+                <div class="user_header" id="user_header_panel">
+                    <div class="flex_user_head">
+                        <span class="news_num">3</span>
+                        <img src="./img/tx.jpeg" alt="" class="img_logo" id="user_logo">
+                        <span class="user_name">大文案</span>
+                    </div>
+
+
+
+                    <!-- 用户菜单面板 -->
+                    <!-- 用户菜单面板 -->
+                    <div class="user_panel">
+                        <div class="arrow"></div>
+                        <ul class="content">
+                            <li><a href="./myHome.html" title="我的主页">我的主页</a></li>
+                            <li><a href="./myNews.html" title="我的信息" class="mynews">我的信息<span class="news_num">3</span> </a></li>
+                            <li><a href="./drafts.html" title="草稿箱">草稿箱(2)</a></li>
+                            <li><a href="./myInformation.html" title="资料与账户">资料与账户</a></li>
+                            <li><a title="退出" id="signOut" href="javascript:void(0);" onclick="signOut()">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- 中间 -->
+        <div class="subject_middle_box">
+            <div class="subject_middle">
+                <!-- 左侧内容 -->
+                <ul class="middle_left">
+                    <div class="card_box">
+                        <!-- 内容卡片 -->
+                        <li class="card">
+                            <!-- 卡片头部 -->
+                            <div class="author_message">
+                                <a href="./taHome.html" style="display: flex;">
+                                    <img src="./img/tx.jpeg" alt="" class="user_head">
+                                    <div class="author_details">
+                                        <p class="author_name"> Hhh花花biu </p>
+                                        <p class="release_time"> 2020/6/1 11:11:11</p>
+                                    </div>
+                                </a>
+                                <a class="follow details_follow">+关注</a>
+                            </div>
+
+                            <!-- 卡片中间内容 -->
+                            <div class="text">
+                                <!-- 文案文本内容 -->
+                                <p class="text_box">
+                                    今天又是阴雨绵绵的一天,<br> 阴雨的天气, <br> 爽歪歪的心情~
+                                </p>
+
+                                <!-- 文案文本内容的出处 -->
+                                <a href="author.html" target="_blank" class="author_source">
+                                    李白《蜀道难》
+                                </a>
+
+                                <!-- 文案文本内容参与的话题 -->
+                                <a class="text_label" href="./towntalkDetails.html" target="_blank">下雨天</a>
+
+
+                                <a title="查看大图" class="show_big_img">
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593685643937&di=a643edf97f9e878a09fd00da7d51cf29&imgtype=0&src=http%3A%2F%2Fimg.article.pchome.net%2F00%2F52%2F45%2F50%2Fpic_lib%2Fwm%2F1.jpg"
+                                        alt="" class="text_img">
+                                </a>
+
+                            </div>
+
+                            <!-- 卡片尾部 -->
+                            <div class=" card_foot ">
+                                <ul class="card_foot_love">
+                                    <li class="love_btn">
+                                        <a class="iconfont  iconaixin loveClick">
+                                            <span class="love_num">0</span>
+                                        </a>
+                                    </li>
+                                    <li class="num_style_box">
+                                        <a class="iconfont iconpinglun" href="./details.html">
+                                            <span class="message_num">111</span>
+                                        </a>
+                                    </li>
+                                    <li class="num_style_box">
+                                        <a class="iconfont icontupian" href="./generatePoster.html" target="_blank">
+                                            <span>生成美图</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="card_foot_share">
+
+                                    分享到:
+                                    <a class="share_weixin">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#iconweixin"></use>
+                                        </svg>
+                                        <div class="weixin_saoma">
+                                            <div class="weixin_saoma_box">
+                                                <img src="./img/weixin.png" alt="">
+                                                <p>打开微信扫一扫</p>
+                                                <p>分享到微信</p>
+                                            </div>
+
+                                            <i class="iconfont iconarrow-fold"></i>
+                                        </div>
+                                    </a>
+                                    <a title="分享到微博" class="weibo">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#iconweibo"></use>
+                                        </svg>
+                                    </a>
+                                    <a title="分享至QQ好友" class="qq">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#iconqq"></use>
+                                        </svg>
+                                    </a>
+                                    <a title="分享到QQ空间" class="qqkongjian">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#iconkongjian"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="comment ">
+                                <!-- 头部 -->
+                                <div class="comment_header">
+                                    <img src="./img/tx.jpeg " alt=" " class="user_head ">
+                                    <textarea onfocus="getFous('main_enter_comment') "
+                                        onblur="loseFous('main_enter_comment') " class="enter_comment"
+                                        id="main_enter_comment">留下您的精彩评论吧</textarea>
+                                    <span class="comment_input_release" id="mainReplyBtn">发布</span>
+                                </div>
+
+                                <!-- 最新评论 -->
+                                <p class="comment_middle_title">
+                                    最新
+                                </p>
+
+                                <!-- 真实用户评论区 -->
+                                <div class="comment_middle">
+                                    <ul class="comment_box">
+                                        <li class="comment_item replay_one">
+                                            <img src="./img/tx.jpeg " alt=" " class="user_head ">
+                                            <ul class="comment_item_user ">
+                                                <li class="user_right">
+                                                    <p class="author_names ">
+                                                        <span class="myName">用户1</span>
+                                                    </p>
+                                                </li>
+                                                <li class="comment_item_content ">
+                                                    <p class="comment_text_box">
+                                                        <span
+                                                            class="comment_text">啦啦啦啦,我是卖报的小行家啦啦啦啦,我是卖报的小行家啦啦啦啦,我是卖报的小行家</span>
+                                                        <span class="comment_time ">今天12:12</span>
+                                                    </p>
+
+                                                    <span class="comment_item_user_right love_btn ">
+                                                        <a title="回复 " class="reply ">回复</a>
+                                                        <span class="fengexian">|</span>
+                                                        <a title="喜欢 " class="iconfont iconaixin loveClick ">
+                                                            <span class="love_num ">0</span>
+                                                        </a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="comment_item other_reply_item replay_two">
+                                            <img src="./img/tx.jpeg " alt=" " class="user_head ">
+                                            <ul class="comment_item_user ">
+                                                <li class="user_right">
+                                                    <p class="author_names ">
+                                                        <span class="myName">用户2</span>
+                                                    </p>
+                                                </li>
+                                                <li class="comment_item_content ">
+                                                    <p class="comment_text_box">
+                                                        <span
+                                                            class="comment_text">啦啦啦啦,我是卖报的小行家啦啦啦啦,我是卖报的小行家啦啦啦啦,我是卖报的小行家啦啦啦啦,我是卖报的小行家啦啦啦啦,我是卖报的小行家啦啦啦啦,我是卖报的小行家啦啦啦啦,我是卖报的小行家</span>
+                                                        <span class="comment_time ">今天12:12</span>
+                                                    </p>
+                                                    <span class="comment_item_user_right love_btn ">
+                                                        <a title="回复 " class="reply ">回复</a>
+                                                        <span class="fengexian">|</span>
+                                                        <a title="喜欢 " class="iconfont iconaixin loveClick ">
+                                                            <span class="love_num ">0</span>
+                                                        </a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="comment_item other_reply_item replay_two">
+                                            <img src="./img/tx.jpeg " alt=" " class="user_head ">
+                                            <ul class="comment_item_user ">
+                                                <li class="user_right">
+                                                    <p class="author_names ">
+                                                        <span class="myName">用户3</span>
+                                                        <span class="replay_user_name">用户2</span>
+                                                    </p>
+                                                </li>
+                                                <li class="comment_item_content ">
+                                                    <p class="comment_text_box">
+                                                        <span class="comment_text">啦啦啦啦,我是卖报的小行家啦啦啦啦</span>
+                                                        <span class="comment_time ">今天12:12</span>
+                                                    </p>
+                                                    <span class="comment_item_user_right love_btn ">
+                                                        <a title="回复 " class="reply ">回复</a>
+                                                        <span class="fengexian">|</span>
+                                                        <a title="喜欢 " class="iconfont iconaixin loveClick "><span
+                                                                class="love_num ">0</span></a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <a class="open_show_more">展开更多回复</a>
+
+                                    </ul>
+                                    <ul class="comment_box ">
+                                        <li class="comment_item replay_one">
+                                            <img src="./img/tx.jpeg " alt=" " class="user_head ">
+                                            <ul class="comment_item_user ">
+                                                <li class="user_right">
+                                                    <p class="author_names ">
+                                                        <span class="myName">用户1</span>
+                                                    </p>
+                                                </li>
+                                                <li class="comment_item_content ">
+                                                    <p class="comment_text_box">
+                                                        <span class="comment_text">啦啦啦啦,我是卖报的小行家</span>
+                                                        <span class="comment_time ">今天12:12</span>
+                                                    </p>
+                                                    <span class="comment_item_user_right love_btn ">
+                                                        <a title="回复 " class="reply ">回复</a>
+                                                        <span class="fengexian">|</span>
+                                                        <a title="喜欢 " class="iconfont iconaixin loveClick ">
+                                                            <span class="love_num ">0</span>
+                                                        </a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="comment_item other_reply_item replay_two">
+                                            <img src="./img/tx.jpeg " alt=" " class="user_head ">
+                                            <ul class="comment_item_user ">
+                                                <li class="user_right">
+                                                    <p class="author_names ">
+                                                        <span class="myName">用户2</span>
+                                                    </p>
+                                                </li>
+                                                <li class="comment_item_content ">
+                                                    <p class="comment_text_box">
+                                                        <span class="comment_text">啦啦啦啦,我是卖报的小行家</span>
+                                                        <span class="comment_time ">今天12:12</span>
+                                                    </p>
+                                                    <span class="comment_item_user_right love_btn ">
+                                                        <a title="回复 " class="reply ">回复</a>
+                                                        <span class="fengexian">|</span>
+                                                        <a title="喜欢 " class="iconfont iconaixin loveClick ">
+                                                            <span class="love_num ">0</span>
+                                                        </a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="comment_item other_reply_item replay_two">
+                                            <img src="./img/tx.jpeg " alt=" " class="user_head ">
+                                            <ul class="comment_item_user ">
+                                                <li class="user_right">
+                                                    <p class="author_names ">
+                                                        <span class="myName">用户2</span>
+                                                    </p>
+                                                </li>
+                                                <li class="comment_item_content ">
+                                                    <p class="comment_text_box">
+                                                        <span class="comment_text">啦啦啦啦,我是卖报的小行家</span>
+                                                        <span class="comment_time ">今天12:12</span>
+                                                    </p>
+                                                    <span class="comment_item_user_right love_btn ">
+                                                        <a title="回复 " class="reply ">回复</a>
+                                                        <span class="fengexian">|</span>
+                                                        <a title="喜欢 " class="iconfont iconaixin loveClick ">
+                                                            <span class="love_num ">0</span>
+                                                        </a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <a class="open_show_more">展开更多回复</a>
+                                    </ul>
+                                </div>
+                            </ul>
+
+                        </li>
+                        <!-- <p class="guess_like_title ">猜你喜欢</p>
+                        <ul class="guess_like ">
+                            <li>
+                                <p class="guess_like_sentence ">
+                                    你有逆流而上的勇气,也有漏船载酒的运气.做人做的如此晦气.何不赚个爽快? ————兰晓龙 《我的团长我的团》
+                                </p>
+                                <p class="views love_btn">
+                                    <a title="喜欢 " class="iconfont iconaixin loveClick ">
+                                        <span class="love_num ">0</span>
+                                    </a>
+                                    <a title="评论 " class="iconfont iconpinglun ">
+                                        <span class="message_num ">111</span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="guess_like_sentence ">
+                                    空待三年又三年,年年总是封信迟;,黄泉无人空吟诗;白首相诺岁月老,山河转眼瘦沙时;山河转眼瘦沙时,走马红尘极度痴.————鬼吟诗
+                                </p>
+                                <p class="views love_btn ">
+                                    <a title="喜欢 " class="iconfont iconaixin loveClick ">
+                                        <span class="love_num ">0</span>
+                                    </a>
+                                    <a title="评论 " class="iconfont iconpinglun ">
+                                        <span class="message_num ">111</span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="guess_like_sentence ">
+                                    你有逆流而上的勇气,也有漏船载酒的运气.做人做的如此晦气.何不赚个爽快? ————兰晓龙 《我的团长我的团》
+                                </p>
+                                <p class="views love_btn ">
+                                    <a title="喜欢 " class="iconfont iconaixin loveClick ">
+                                        <span class="love_num ">0</span>
+                                    </a>
+                                    <a title="评论 " class="iconfont iconpinglun ">
+                                        <span class="message_num ">111</span>
+                                    </a>
+                                </p>
+                            </li>
+
+                        </ul> -->
+
+                    </div>
+                </ul>
+                <!-- 右侧内容 -->
+                <div class="middle_right ">
+
+                    <div class="popularity ">
+                        <div class="title">
+                            <span class="popularity_title">热门话题</span>
+                        </div>
+                        <div class="copyWriting_box ">
+                            <div class="copyWriting_box_content ">
+                                <ul>
+                                    <div class="copyWriting_box_content_right ">
+                                        <a class="copyWriting_title ">精选热门话题分享</a>
+                                        <a class="follow ">+ 关注</a>
+                                        <p class="love_btn ">
+                                            <span>点赞量<span>123</span></span>
+                                            <span>参与人数<span>123</span></span>
+                                        </p>
+                                    </div>
+
+                                </ul>
+                                <ul>
+                                    <div class="copyWriting_box_content_right ">
+                                        <a class="copyWriting_title ">精选热门话题分享</a>
+                                        <a class="follow ">+ 关注</a>
+                                        <p class="love_btn ">
+                                            <span>点赞量<span>123</span></span>
+                                            <span>参与人数<span>123</span></span>
+                                        </p>
+                                    </div>
+
+                                </ul>
+                                <ul>
+                                    <div class="copyWriting_box_content_right ">
+                                        <a class="copyWriting_title ">精选热门话题分享</a>
+                                        <a class="follow ">+ 关注</a>
+                                        <p class="love_btn ">
+                                            <span>点赞量<span>123</span></span>
+                                            <span>参与人数<span>123</span></span>
+                                        </p>
+                                    </div>
+
+                                </ul>
+                                <ul>
+                                    <div class="copyWriting_box_content_right ">
+                                        <a class="copyWriting_title ">精选热门话题分享</a>
+                                        <a class="follow ">+ 关注</a>
+                                        <p class="love_btn ">
+                                            <span>点赞量<span>123</span></span>
+                                            <span>参与人数<span>123</span></span>
+                                        </p>
+                                    </div>
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 右二,微信公众号 -->
+                    <div class="weixin ">
+                        <div class="title ">
+                            <p class="popularity_title ">微信公众号</p>
+                        </div>
+                        <div class="official_account ">
+                            <img src="./img/weixin.png " alt=" " style="width: 116px;height:116px;margin-left: 20px; ">
+                            <div class="explain ">
+                                <p class="saoma_follow ">扫一扫关注微信公众号</p>
+                                <p class="tips ">更多名言美句等你发现~</p>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 尾部 -->
+        <div class="subject_foot ">
+            <ul class="foot_btn ">
+                <li><a href=" " title="联系我们 ">联系我们</a></li>
+                <li>|</li>
+                <li><a href=" " title="微信公众号 ">微信公众号</a></li>
+            </ul>
+            <p class="foot_message ">
+                xxx公司版权所有@2017-2020 沪公网安备31010102002072号 增强电信业务经营许可证:沪B2-20180610自营经营者信息
+            </p>
+        </div>
+
+        <!-- 返回顶部 -->
+        <div class="return_top ">
+            <a title="返回顶部 ">
+                <svg class="icon " aria-hidden="true ">
+                    <use xlink:href="#iconhuidaodingbu "></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- 遮罩 -->
+    <div id="mask"></div>
+
+    <!-- 大图区域 -->
+    <div class="big_img_box">
+        <img src="" alt="" class="big_img_url">
+        <a title="关闭" class="iconfont iconquxiaoguanbi" id="closeMask"></a>
+    </div>
+
+
+</body>
+
+</html>

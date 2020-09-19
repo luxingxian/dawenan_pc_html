@@ -1,0 +1,123 @@
+/* 推荐精选分类，次菜单栏 */
+.main_subject .popular_picture_bottom {
+    width: 1200px;
+    margin: 0 auto;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_subject .popular_picture_bottom li a {
+    padding: 11px 0;
+    font-size: 16px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.main_subject .popular_picture_bottom li a:hover {
+    color: #57cdd4;
+}
+
+
+
+
+
+/* 精选卡片主区域 */
+.subject_middle .beaytiful_picture_box {
+    padding: 20px 0;
+    column-count: 3;
+    column-gap: 20px;
+    width: 880px;
+}
+
+
+/* 单个卡片 */
+.subject_middle .beaytiful_picture_box .beaytiful_picture_card {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: opacity .4s ease-in-out;
+    border-radius: 3px;
+    display: inline-block;
+    box-sizing: border-box;
+    break-inside: avoid;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+.subject_middle .beaytiful_picture_box .beaytiful_picture_card:hover {
+    box-shadow: 0 0px 9px rgba(0, 0, 0, .1);
+}
+
+.subject_middle .beaytiful_picture_box .beaytiful_picture_card>a {
+    display: flex;
+}
+
+/* 单个卡片上面的图片 */
+.subject_middle .beaytiful_picture_box .beaytiful_picture_card .beaytiful_picture_url {
+    width: 280px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.subject_middle .beaytiful_picture_box .beaytiful_picture_card:hover .beaytiful_picture_url {
+    /* filter: alpha(Opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6; */
+    filter: brightness(60%);
+}
+
+
+/* 单个卡片中间的简介 */
+.subject_middle .beaytiful_picture_box .beaytiful_picture_card .beaytiful_picture_title{
+    /* width: 175px; */
+    /* white-space: pre-line; */
+    /* word-break: keep-all; */
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; */
+    font-size: 14px;
+    color: #444444;
+    padding: 14px 15px 0 15px;
+}
+
+/* 卡片尾部 */
+/* 单个卡片下面的喜欢,评论 */
+.card_foot_love {
+    display: flex !important;
+    border-bottom: 1px #eeeeee solid;
+    font-size: 12px;
+    color: #666666;
+    padding: 14px 15px;
+    padding: 0px 15px;
+}
+
+.card_foot_love li {
+    margin-right: 20px;
+}
+
+.card_foot_love li a {
+    font-size: 12px;
+}
+
+.card_foot_love li .iconpinglun:hover {
+    color: #57cdd4;
+}
+
+.beaytiful_picture_box .beaytiful_picture_card .beaytiful_picture_card_user_head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 15px;
+    border-top: 1px #eeeeee solid;
+    margin-top: 10px;
+}
+
+.beaytiful_picture_box .beaytiful_picture_card .beaytiful_picture_card_user_head .user_name {
+    font-size: 12px;
+    color: #222222;
+    float: right;
+    margin-top: 4px;
+    margin-left: 4px;
+}

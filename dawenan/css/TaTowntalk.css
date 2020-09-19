@@ -1,0 +1,213 @@
+.subject_middle {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.subject_middle .middle_left {
+    width: 880px;
+}
+
+.subject_middle .middle_left .card_box {
+    width: 880px;
+    margin: 0 auto;
+}
+
+.subject_middle .middle_left .card_box .card {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 5px #f3f3f3;
+    transform: translate3d(0, -4px, 0);
+    padding-bottom: 10px;
+}
+
+
+/* 中间左侧卡片头部 */
+
+.subject_middle .middle_left .card_box .card .author_message {
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    background-color: rgb(246, 246, 246);
+}
+
+.subject_middle .middle_left .card_box .card .author_message .operation_name {
+    font-size: 14px;
+    color: #666666;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .operation_time {
+    font-size: 12px;
+    color: #999999;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .operation_time::before {
+    content: "创建话题 :";
+}
+.subject_middle .middle_left .card_box .card .author_message .join:before {
+    content: "参与话题 :";
+}
+
+.create_towntalk .towntalk_title {
+background-color: #ffffff  !important;
+}
+.towntalk_title{
+background-color: rgb(246, 246, 246);
+color: #57cdd4 !important;
+font-size: 16px;
+color: #666666;
+padding: 10px 0;
+}
+
+.towntalk_title::before {
+    content: "\e6c4";
+    font-family: "iconfont" !important;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+
+/* 中间左侧,卡片中间部分的文本内容 */
+
+.subject_middle .middle_left .card_box .card .text {
+    color: #222222;
+    line-height: 30px;
+}
+
+
+/* 中间左侧,卡片中间部分的关注操作内容 */
+
+.subject_middle .middle_left .card_box .card .follow_operation {
+    text-align: center;
+}
+
+.subject_middle .middle_left .card_box .card .follow_operation .details_of_followers {
+    width: 90%;
+    margin: 30px 0 10px 60px;
+    display: flex;
+    height: 50px;
+    /* border: 1px red solid; */
+}
+
+.subject_middle .middle_left .card_box .card .follow_operation .details_of_followers .user_large_head_box {
+    margin: 0;
+}
+
+.subject_middle .middle_left .card_box .card .follow_operation .details_of_followers .content_of_followers_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+    /* border: 1px red solid; */
+    margin-left: 20px;
+}
+
+.subject_middle .middle_left .card_box .card .follow_operation .details_of_followers .content_of_followers_box li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.subject_middle .middle_left .card_box .card .follow_operation .details_of_followers .content_of_followers_box li .follow_userName {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #222222;
+}
+
+.num_stylle {
+    color: #222222;
+}
+
+.main_subject .author_head {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.subject_middle .middle_right {
+    width: 300px;
+    /* height: 600px; */
+}
+
+.subject_middle .middle_right .popularity {
+    width: 100%;
+    margin: 20px 0;
+    /* border: 1px blue solid; */
+}
+
+.subject_middle .middle_right .popularity .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subject_middle .middle_right .popularity .popularity_message_box {
+    width: 300px;
+    background: white;
+}
+
+.subject_middle .middle_right .popularity .popularity_message {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    padding: 20px;
+    /* border: 1px blue solid; */
+}
+
+.subject_middle .middle_right .popularity .popularity_message .popularity_personnel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.subject_middle .middle_right .popularity .popularity_message .popularity_personnel:hover .popularity_name {
+    color: #57cdd4;
+}
+
+.subject_middle .middle_right .popularity .popularity_message img {
+    margin: 5px;
+}
+
+
+/* 他的主页.关注,私信 */
+
+.myHomepage_box .myHomepage_user_large_head .myHomepage_personal_brief_introduction {
+    margin: 10px auto !important;
+}
+
+.myHomepage_box .myHomepage_user_large_head li a {
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px #57cdd4 solid;
+}
+
+
+/* 关注 */
+
+.myHomepage_box .myHomepage_user_large_head li #follow_ta {
+    color: #ffffff;
+    background-color: #57cdd4;
+    margin-right: 10px;
+}
+
+
+/* 私信 */
+
+.myHomepage_box .myHomepage_user_large_head li #contact_ta {
+    color: #57cdd4;
+    background-color: #ffffff;
+}

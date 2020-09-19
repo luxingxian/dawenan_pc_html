@@ -1,0 +1,230 @@
+
+.subject_middle_box .subject_middle .work_box {
+    width: 1160px;
+    margin: 20px 0 0 0;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+}
+
+/* 上传图片预览框 */
+.subject_middle_box .subject_middle .content-img-list {
+    width: 100%;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+}
+.subject_middle_box .subject_middle .content-img-list .content-img-list-item {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 10px 10px 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* 添加图片 */
+.add_img_item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.change_img {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.add_img_item a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+    color: #666666;
+    text-align: center;
+}
+
+/* input file框 */
+.subject_middle_box .subject_middle .add_picture_input {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+
+
+/* 文本区域 */
+.subject_middle_box .subject_middle .work_box .enter_text {
+    font-size: 16px;
+    position: relative;
+}
+
+.subject_middle_box .subject_middle .work_box .enter_text .text_area {
+    width: 1120px;
+    padding: 10px 20px;
+    resize: none;
+    height: 100px;
+    border: none;
+    color: #222222;
+    line-height: 30px;
+    outline: none;
+    background-color: rgb(246, 246, 246);
+    font-family: Microsoft YaHei;
+}
+
+/* 限制滚动条不会出现 */
+.text_area::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* 剩余字数 */
+.subject_middle_box .subject_middle .work_box .enter_text .remaining_words {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+}
+
+/* 作者出处 */
+.subject_middle_box .subject_middle .work_box .enter_text .source_box {
+    position: relative;
+    margin: 20px 0;
+}
+.subject_middle_box .subject_middle .work_box .enter_text .source_box span {
+    font-size: 14px;
+    width: 90px;
+    display: inline-block;
+}
+.subject_middle_box .subject_middle .work_box .enter_text .source_box input {
+    outline: none;
+    border: none;
+    height: 30px;
+    display: inline-block;
+    width: 1040px;
+    padding-left: 20px;
+    border-bottom: 1px #eeeeee solid;
+}
+
+/* 选择作者出处弹框 */
+.subject_middle_box .subject_middle .work_box .enter_text .source_box .selection_box {
+    position: absolute;
+    right: 5px;
+    left: 95px;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 0 0 5px #f3f3f3;
+    display: none;
+}
+
+.subject_middle_box .subject_middle .work_box .enter_text .source_box .select_towntalk_box {
+    position: absolute;
+    right: 5px;
+    left: 95px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #f3f3f3;
+    display: none;
+    z-index: 33;
+}
+
+.subject_middle_box .subject_middle .work_box .enter_text .source_box .select_towntalk_box li {
+    padding: 5px 20px;
+    position: relative;
+}
+
+.subject_middle_box .subject_middle .work_box .enter_text .source_box .select_towntalk_box li:hover {
+    background-color: #f6fcfd;
+}
+
+.towntalk_title,
+.join_num {
+    font-size: 12px !important;
+    color: #222222;
+    display: inline !important;
+}
+
+.join_num {
+    color: #666666;
+}
+
+.create_new_talk {
+    color: #222222;
+    font-size: 12px !important;
+    margin-left: 40px;
+}
+
+.subject_middle_box .subject_middle .work_box .enter_text .source_box .select_towntalk_box .towntalk_title::before {
+    content: '#';
+}
+
+
+.bg-primary {
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.bg-primary .sel {
+    border: 1px #999999 solid;
+}
+
+.bg-primary select {
+    font-size: 12px;
+}
+
+.selection_box .tuijian_neirong {
+    /* height: 200px; */
+    background-color: #ffffff;
+}
+
+.selection_box .tuijian_neirong li {
+    padding: 5px 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.selection_box .tuijian_neirong li:hover {
+    background-color: #f6fcfd;
+}
+
+.subject_middle_box .subject_middle .work_box .enter_text .source_box .selection_box .selection_box_item {
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #222222;
+    cursor: pointer;
+}
+
+/* 提交 */
+.subject_middle_box .subject_middle .work_box .enter_text .submit_box {
+    display: block;
+    margin: 50px 0;
+}
+
+.subject_middle_box .subject_middle .work_box .enter_text .submit_article {
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #57cdd4;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+/* 自动保存草稿提示 */
+.subject_middle_box .subject_middle .work_box .enter_text .submit_tips {
+    font-size: 12px;
+    color: #666666;
+}
+

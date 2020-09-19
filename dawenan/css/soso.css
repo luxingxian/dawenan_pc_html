@@ -1,0 +1,173 @@
+.main_subject .subject_box {
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+}
+
+/* 搜索选项，文案，话题，用户 */
+.soso_result_classification_menu {
+    height: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    color: #999999;
+}
+
+.soso_result_classification_menu li {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
+.soso_result_classification_menu li:hover {
+    color: #57cdd4;
+}
+
+
+/* 搜索结果区域 */
+#soso_result_user,
+#soso_result_towmtalk {
+    display: none;
+}
+
+
+.subject_middle .soso_result_area {
+    width: 880px;
+    margin: 20px 0;
+}
+
+/* 右侧热搜榜 */
+.subject_middle .hot_list {
+    width: 300px;
+    margin: 20px 0;
+}
+
+.subject_middle .hot_list .hot_list_box {
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+.subject_middle .hot_list .hot_list_box a {
+    display: block;
+    font-size: 12px;
+    padding: 10px 20px;
+    color: #999999;
+}
+
+.subject_middle .hot_list .hot_list_box a:hover {
+    color: #222222;
+}
+
+
+
+
+/* 
+搜索到的每一个卡片 */
+.subject_middle .soso_result_area .soso_result .soso_result_item {
+    border-bottom: 1px #eeeeee solid;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.subject_middle .soso_result_area #soso_result_user .soso_result_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.subject_middle .soso_result_area #soso_result_user .soso_result_item .enter_user_home{
+  background-color: #ffffff;
+}
+.enter_user_home_box{
+    background-color: rgb(246, 246, 246);
+}
+.subject_middle .soso_result_area .soso_result .soso_result_item .enter_user_home {
+    height: 40px;
+    display: inline-flex;
+    padding: 10px 0 5px 0;
+
+}
+
+.soso_result_item .enter_user_home .user_basic_message .user_data {
+    font-size: 12px;
+}
+
+ .soso_result_item .enter_user_home .user_basic_message .user_data span {
+    margin-right: 10px;
+}
+
+.article,.love,.guanzhu{
+    color: #222222;
+}
+.soso_result_item .enter_user_home .user_basic_message .user_data .article::before {
+    content: "文章:";
+    color: #666666;
+}
+
+.soso_result_item .enter_user_home .user_basic_message .user_data .love::before {
+    content: "喜欢:";
+    color: #666666;
+}
+
+ .soso_result_item .enter_user_home .user_basic_message .user_data .guanzhu::before {
+    content: "关注:";
+    color: #666666;
+}
+
+ .soso_result_item .enter_user_home .user_basic_message {
+    margin-left: 10px;
+}
+
+.soso_result_item .enter_user_home .soso_user_name {
+    font-size: 14px;
+    color: #222222;
+    font-family: Microsoft YaHei-Bold;
+}
+
+ .soso_result_item .enter_user_home .main_message {
+    font-size: 12px;
+    color: #666666;
+}
+
+ .soso_result_item .enter_user_home .main_message::before {
+    content: "简历:";
+}
+
+ .soso_result_item .enter_user_home .time::before {
+    content: "发布于:";
+}
+
+ .soso_result_item .enter_user_home .time {
+    font-size: 12px;
+    color: #999999;
+}
+
+/* 搜索话题的文本区域 */
+.subject_middle .soso_result_area .soso_result .soso_result_item .enter_the_details {
+    display: inline-block;
+    font-size: 16px;
+    color: #222222;
+    line-height: 30px;
+    padding: 20px 0 20px 30px;
+    /* border: 1px red solid;
+    max-height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-spacing: normal; */
+}
+
+.subject_middle .soso_result_area #soso_result_towmtalk .soso_result_item .enter_the_details::before {
+    content: "\e6c4";
+    font-family: "iconfont" !important;
+    color: #57cdd4;
+    font-size: 14px;
+}
+
+/* 卡片的尾部，喜欢和评论 */
+.subject_middle .soso_result_area .card_foot {
+    padding-bottom: 10px;
+}

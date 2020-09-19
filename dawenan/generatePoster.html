@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大文案</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./css/generatePoster.css">
+    <link rel="stylesheet" type="text/css" href="./css/commont.css">
+    <script src="./js/jquery-2.0.2.js"></script>
+    <script src="./js/commont.js"></script>
+    <script src="./js/generatePoster.js"></script>
+    <script src="./js/html2canvas.js"></script>
+    <script src="./js/md5.js"></script>
+    <script src="./font/iconfont.js"></script>
+</head>
+
+<body>
+    <div class="main_subject">
+        <div class="subject_box">
+            <!-- 头部 -->
+            <div class="subject_header">
+                <!-- 公司logo -->
+                <div class="header_logo">
+                    <svg class="icon" aria-hidden="true" class="img_logo">
+                        <use xlink:href="#iconlogo" class="img_logo"></use>
+                    </svg>
+                </div>
+                <!-- 主菜单栏 -->
+                <ul class="header_menu">
+                    <li>
+                        <a href="./index.html" title="首页" class="shouye">首页 </a>
+
+                    </li>
+                    <li>
+                        <a href="./towntalk.html" title="话题" class="huati">话题</a>
+                    </li>
+                    <li>
+                        <a href="./beautifulPicture.html" title="精选" class="jingxuan">精选</a>
+                    </li>
+
+                </ul>
+
+                <!-- 搜索框 -->
+                <div class="header_input">
+                    <input type="text" oninput="sosocheckTxt()" name="soso_input" onfocus="sosoGetFous()"
+                        onblur="sosoLoseFous()" id="soso" value="微信朋友圈文案">
+                    <a title="搜索" id="btn_soso">搜索</a>
+                    <ul class="input_hover_content" id="recommend">
+                        <a href="./soso.html" class="more">查看完整热搜榜</a>
+                        <a><span class="hot">1</span>精选热门话题</a>
+                        <a><span class="hot">2</span>#拍下你面前的东西</a>
+                        <a><span class="hot">3</span>#写给空气的情话</a>
+                        <a><span>4</span>你本来就很美</a>
+                        <a><span>5</span>你来人间一趟 你要看看太阳</a>
+                    </ul>
+                    <ul class="input_hover_content" id="search">
+                        <a>#你来人间一趟 你要看看太阳</a>
+                        <a>#精选热门话题</a>
+                        <a>#拍下你面前的东西</a>
+                        <a>你来人间一趟 你要看看太阳</a>
+                        <a class="soso_user_message" href="./soso.html">
+                            <img src="./img/tx.jpeg" alt="" class="user_head">
+                            <span class="soos_user_name">11</span>
+                        </a>
+                    </ul>
+
+                </div>
+                <!-- 发布作品 -->
+                <a href="./releaseWork.html" title="发布作品" class="release_works" id="btn_release"> <i
+                        class="iconfont  iconicon_cz"></i> 发布作品</a>
+
+
+
+                <!-- 登录与注册 -->
+                <ul class="header_btn" id="login_or_register_panel">
+                    <li><a title="登录" id="login">登录</a></li>
+                    <li>|</li>
+                    <li><a title="注册" id="register">注册</a></li>
+                </ul>
+
+
+
+
+                <div class="user_header" id="user_header_panel">
+                    <div class="flex_user_head">
+                        <span class="news_num">3</span>
+                        <img src="./img/tx.jpeg" alt="" class="img_logo" id="user_logo">
+                        <span class="user_name">大文案</span>
+                    </div>
+
+
+                    <!-- 用户菜单面板 -->
+                    <div class="user_panel">
+                        <div class="arrow"></div>
+                        <ul class="content">
+                            <li><a href="./myHome.html" title="我的主页">我的主页</a></li>
+                            <li><a href="./myNews.html" title="我的信息" class="mynews">我的信息<span class="news_num">3</span> </a></li>
+                            <li><a href="./drafts.html" title="草稿箱">草稿箱(2)</a></li>
+                            <li><a href="./myInformation.html" title="资料与账户">资料与账户</a></li>
+                            <li><a title="退出" id="signOut" href="javascript:void(0);" onclick="signOut()">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- 中间 -->
+        <div class="subject_middle_box">
+            <div class="subject_middle">
+                <p class="nav_bar">
+                    <a href="">详情</a>/
+                    <span class="current_nav">生成美图</span>
+                </p>
+                <div class="generate_poster_box">
+                    <div class="generate_poster_left">
+                        <div id="screenshot_area" class="template_one_background">
+                            <div style="position: relative;">
+                                <img src="./img/1.jpg" alt="" class="generate_poster_img">
+                                <div class="generate_poster_text">
+                                    <p class="chinese_text chinese_text_two">
+                                        我之所以会赌你明白这么多的事情，是因为我相信你。<br>
+                                        这个年代，相信比爱，还要珍贵上那么一点。<br>
+                                        我知道你也相信我，<br>
+                                        所以我把心掏出来给你看，<br>
+                                        毫无保留。
+                                    </p>
+                                    <p class="English_text">
+                                        If I love you less, I can say more.
+                                    </p>
+                                </div>
+                            </div>
+                            <li class="user_head_box">
+                                <img src="./img/tx.jpeg" alt="" class="img_logo">
+                                <span class="user_names user_names_two">美美的鱼香肉丝</span>
+                            </li>
+                            <li class="user_generate_time">
+                                <p class="project_logo_name">[大文案]</p>
+                                <p class="generate_time">2020/06/02</p>
+                            </li>
+                        </div>
+                        <div class="generate_poster_left_foot">
+                            保存图片
+                        </div>
+
+
+                    </div>
+                    <div class="generate_poster_right">
+                        <div class="change_template">
+                            <p class="change_title">更换模板</p>
+                            <p class="choice_template">
+                                <a class="template_one template" title="模板1">
+                                    <span class="iconfont iconsanjiaoxuanzhong select_icon"></span>
+                                </a>
+                                <a class="template_two template" title="模板2">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a class="template_no template" title="没有模板" style="background-color: darkseagreen;">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                            </p>
+                        </div>
+                        <p class="change_title">显示</p>
+                        <div class="choice_information">
+                            <label>
+                                <input type="checkbox" name="item" id="userMessage">
+                                <span>用户信息</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="item" id="createTime">
+                                <span>日期</span>
+                            </label>
+                        </div>
+                        <p class="change_title">更换图片</p>
+                        <div class="change_img_box">
+                            <div>
+                                <span class="change_img_title">-风景-</span>
+                                <a>
+                                    <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3175463323,1252831295&fm=26&gp=0.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594384712484&di=cd9c2f3d55dd3b0b6bedbb5882b92658&imgtype=0&src=http%3A%2F%2Fstatic001.infoq.cn%2Fresource%2Fimage%2F5c%2Fef%2F5c577320781bb0b4627b80964245f3ef.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2165218917,3166606207&fm=26&gp=0.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594384806226&di=e7a4aa3fba7b69fcb104466c694bea91&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2Ftg%2F256%2F289%2F826%2F1567bcbf90c748f2a7cf2d12d3b5605c.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                            </div>
+                            <div>
+                                <span class="change_img_title">-美食-</span>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594384896003&di=68c91677beeef95ae079388cca94613b&imgtype=0&src=http%3A%2F%2Fimg.article.pchome.net%2F00%2F24%2F26%2F33%2Fpic_lib%2Fwm%2F004.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a> <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594384896003&di=7dde21980b4fe0ce1f701c5943d45ae7&imgtype=0&src=http%3A%2F%2Fimg.cwq.com%2F201706%2F1498276448815536.jpeg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594384896003&di=68c91677beeef95ae079388cca94613b&imgtype=0&src=http%3A%2F%2Fimg.article.pchome.net%2F00%2F24%2F26%2F33%2Fpic_lib%2Fwm%2F004.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594384947844&di=ac29599137c813dea138bb3f1ba2e470&imgtype=0&src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F9972960562%2F0.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+
+                            </div>
+                            <div>
+                                <span class="change_img_title">-城市-</span>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594384982847&di=e47f68088dc31e261c02f9bd8cb466fd&imgtype=0&src=http%3A%2F%2Fstatic01.coloros.com%2Fbbs%2Fdata%2Fattachment%2Fforum%2F201412%2F13%2F185715ihknyccdpw0cvo0w.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594384982845&di=b88423085250ef21017f26662d25cc7d&imgtype=0&src=http%3A%2F%2Fdingyue.nosdn.127.net%2FxI5vOR%3D5WCDPXSQl3AcTBSi0hQtp7uTL6Oz1MBNaUKqnH1528789200649compressflag.jpeg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594385025977&di=e775b8d87ca38fd2519578ff2d298859&imgtype=0&src=http%3A%2F%2Fs0.ifengimg.com%2F2015%2F09%2F08%2F8fbe7d7a8575ef990e4346cf74a0745e.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594384982843&di=627facc59786534a2fa499a9f7d905f1&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170816%2Fc8c9f4fcb4234a58bbef2fe2e6db330b_th.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                            </div>
+                            <div>
+                                <span class="change_img_title">-人物-</span>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594385138087&di=76fae10a8478e17cde85172e70d6d036&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20180705%2F14%2F1530770842-WDQGNjVPfv.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594385138121&di=68202e285a658b3f5f79d6c9446f4ed2&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20190508%2F14%2F1557298074-tFCYJxdoVW.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594385138087&di=76fae10a8478e17cde85172e70d6d036&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20180705%2F14%2F1530770842-WDQGNjVPfv.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                                <a>
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594385138087&di=76fae10a8478e17cde85172e70d6d036&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20180705%2F14%2F1530770842-WDQGNjVPfv.jpg"
+                                        alt="">
+                                    <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                </a>
+                            </div>
+                            <div>
+                                <span class="change_img_title">-其他-</span>
+                                <div class="item_img">
+                                    <a>
+                                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594385223061&di=ad3c4a07e15f2abc7887bd10a0df96d6&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201509%2F03%2F20150903142327_ckLFt.thumb.1000_0.jpeg"
+                                            alt="">
+                                        <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                    </a>
+                                    <a>
+                                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594385223057&di=6c68c7d4c364487efad867d23c3fac32&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F5d6034a85edf8db13fa6e1e10b23dd54574e74af.jpg"
+                                            alt="">
+                                        <span class="iconfont iconsanjiaoxuanzhong"></span>
+                                    </a>
+                                    <a id="select_other" title="上传图片">
+                                        <label class="iconfont iconicon-test">
+                                            <input type="file" name="" id="add_other_img">
+                                        </label>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- 尾部 -->
+            <div class="subject_foot">
+                <ul class="foot_btn">
+                    <li><a href="" title="联系我们">联系我们</a></li>
+                    <li>|</li>
+                    <li><a href="" title="微信公众号">微信公众号</a></li>
+                </ul>
+                <p class="foot_message">
+                    xxx公司版权所有@2017-2020 沪公网安备31010102002072号 增强电信业务经营许可证:沪B2-20180610自营经营者信息
+                </p>
+            </div>
+
+            <!-- 返回顶部 -->
+            <div class="return_top">
+                <a title="返回顶部">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#iconhuidaodingbu"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

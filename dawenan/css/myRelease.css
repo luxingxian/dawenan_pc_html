@@ -1,0 +1,142 @@
+.subject_middle .middle_left .card_box {
+    width: 880px;
+    margin: 0 auto;
+}
+
+
+/* 通过,未通过,审核中,筛选卡片 */
+.subject_middle .middle_left .card_screen {
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.subject_middle .middle_left .card_screen .checked_items {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #222222;
+    cursor: pointer;
+    position: relative;
+    z-index: 333;
+}
+
+.subject_middle .middle_left .card_screen li .checked_flag_close {
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+}
+
+.subject_middle .middle_left .card_screen li .checked_flag_open {
+    display: inline-block;
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+}
+
+
+/* hover,出现选择框 */
+.subject_middle .middle_left .card_screen .checked_items_box {
+    width: 155px;
+    position: absolute;
+    z-index: 1000;
+    right: 320px;
+    top: 43px;
+    background-color: white;
+    box-shadow: 0 0 5px #f3f3f3;
+    display: none;
+}
+
+.subject_middle .middle_left .card_screen .checked_items_box li {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    color: #222222;
+    cursor: pointer;
+}
+
+.subject_middle .middle_left .card_screen .checked_items_box li:hover {
+    background-color: #f6fcfd;
+}
+
+.subject_middle .middle_left .card_box .card {
+    display: block;
+    width: 100%;
+    margin: -15px 0 30px 0;
+    margin: -0 0 30px 0;
+    background-color: white;
+    box-shadow: 0 0 5px #f3f3f3;
+    transform: translate3d(0, -4px, 0);
+    padding-bottom: 10px;
+}
+
+
+/* 中间左侧卡片头部 */
+
+.subject_middle .middle_left .card_box .card .author_message {
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    background-color: rgb(246, 246, 246);
+    margin-bottom: 10px;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .user_operation {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.iconicon_huabanfuben {
+    font-size: 14px !important;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .user_operation .operation_time {
+    font-size: 12px;
+    color: #999999;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .user_operation .operation_name {
+    font-size: 14px;
+    color: #666666;
+}
+
+.subject_middle .middle_left .card_box .card .author_message .user_operation .operation_time::before {
+    content: "发布时间 ：";
+}
+
+
+.subject_middle .middle_left .card_box .card .author_message .examine_result {
+    font-size: 12px;
+    padding: 4px 3px;
+    align-self: baseline;
+    margin-left: 10px;
+}
+
+
+/* 等待审核 */
+
+.subject_middle .middle_left .card_box .card .author_message .examine_result_wait {
+    color: #57cdd4;
+    background-color: #e6f8f9;
+}
+
+/* 通过审核,已发布 */
+.subject_middle .middle_left .card_box .card .author_message .examine_result_pass {
+    color: #57d483;
+    background-color: #eefbf2;
+}
+
+/* 未通过审核 */
+.subject_middle .middle_left .card_box .card .author_message .examine_result_fail {
+    color: #ff5033;
+    background-color: #ffedea;
+}
+
+/* 中间左侧,卡片中间部分的文本内容 */
+.subject_middle .middle_left .card_box .card .text {
+    margin: 20px 0 40px 20px;
+    font-size: 16px;
+    color: #222222;
+    line-height: 30px;
+}

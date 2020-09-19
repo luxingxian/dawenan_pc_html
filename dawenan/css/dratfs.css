@@ -1,0 +1,75 @@
+
+.subject_middle .card_box .card {
+    display: block;
+    width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 5px #f3f3f3;
+    transform: translate3d(0, -4px, 0);
+    padding-bottom: 20px;
+}
+
+.subject_middle .card_box .card .author_message {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px #eeeeee solid;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    background-color: rgb(246, 246, 246);
+}
+
+.subject_middle .card_box .card .text_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subject_middle .card_box .card .text {
+    margin: 20px 0 20px 20px;
+    font-size: 14px;
+    color: #222222;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.main_subject .author_head {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.subject_middle .card_box .card .author_name {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #222222;
+}
+
+.subject_middle .card_box .card .author_operation {
+    margin: 0 20px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.subject_middle .card_box .card .author_operation #author_operation_time::before {
+    content: "保存时间 : ";
+}
+
+.subject_middle .card_box .card .card_header_right {
+    position: absolute;
+    right: 30px;
+}
+
+.subject_middle .card_box .card .card_header_right li,
+.subject_middle .card_box .card .card_header_right a {
+    font-size: 12px;
+    color: #57cdd4;
+}
+
+.subject_middle .card_box .card .card_header_right li {
+    display: inline-block;
+    margin-right: 10px;
+}
+

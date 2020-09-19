@@ -1,0 +1,215 @@
+.main_subject {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main_subject .author_head {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.subject_middle .middle_left .author_name {
+    font-size: 14px;
+    color: #666666;
+    padding-right: 10px;
+}
+
+.subject_middle .middle_left .time {
+    font-size: 12px;
+    color: #999999;
+}
+
+
+/* 评论 */
+
+.middle_left .comment {
+    margin-top: 20px;
+}
+
+
+/* 评论头像 */
+
+.middle_left .comment .comment_header {
+    background-color: white;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.middle_left .comment .comment_header .comment_header_top {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 20px;
+    border-bottom: 1px #eeeeee solid;
+}
+
+.middle_left .comment .comment_header .comment_input_release {
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 80px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #57cdd4;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 36px;
+    z-index: 33;
+    cursor: pointer;
+    display: none;
+}
+
+.comment_header_input::-webkit-scrollbar {
+    width: 0px;
+}
+
+.middle_left .comment .comment_header .comment_header_top .iconxiaoxi {
+    font-size: 16px;
+    color: #222222;
+    font-weight: bold;
+}
+
+.middle_left .comment .comment_header .comment_header_top .towntalk_title {
+    font-size: 16px;
+    color: #222222;
+    font-family: Microsoft YaHei-Bold;
+    color: #57cdd4;
+}
+.middle_left .comment .comment_header .comment_header_top .towntalk_title::before{
+    content: '\e6c4';
+    font-family: "iconfont" !important;
+    margin-right: 5px;
+}
+
+.middle_left .comment .comment_header .comment_header_top .towntalk_join_num {
+    font-size: 14px;
+    color: #999999;
+}
+
+.middle_left .comment .comment_header .comment_header_top li span {
+    margin-right: 20px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.middle_left .comment .comment_header .comment_header_input {
+    width: 800px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f6f6f6;
+    resize: none;
+    margin: 20px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #666666;
+    font-size: 14px;
+    transition: height 0.4s;
+}
+
+
+/* 真实用户评论区 */
+
+.subject_middle .middle_left .comment .comment_middle {
+    width: 840px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.subject_middle_box .subject_middle .middle_left .comment .comment_middle .comment_middle_title span {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 14px;
+    color: #222222;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+/* .select_comment {
+    color: #57cdd4 !important;
+    border-bottom: 2px #57cdd4 solid;
+} */
+
+.subject_middle_box .subject_middle .middle_left .comment .comment_middle .comment_middle_title span:hover {
+    color: #57cdd4;
+}
+
+.card_box {
+    width: 880px;
+}
+
+.card_box .card {
+    background-color: #ffffff;
+    margin: 10px 0;
+    word-break: break-all;
+}
+
+.card_box .card .author_message {
+    /* padding: 0 20px; */
+    background-color: rgb(246, 246, 246);
+}
+
+.subject_middle .middle_left .card_box .card .text a {
+    /* display: block;
+    max-width: 800px; */
+    font-size: 14px !important;
+}
+
+.subject_middle .middle_left .card_box .card .text {
+    margin: 20px 20px 0 30px !important;
+}
+
+
+/* 上传图片预览框 */
+
+.subject_middle_box .subject_middle .content-img-list {
+    width: 820px;
+    margin: 0 auto;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: rgb(246, 246, 246);
+    padding: 0 0 10px 20px;
+    margin-top: -24px;
+    /* padding: 10px 20px; */
+    display: none
+}
+
+.subject_middle_box .subject_middle .content-img-list .content-img-list-item {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+
+/* 添加图片 */
+
+.add_img_item {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.add_img_item a {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    color: #666666;
+    text-align: center;
+}
+.add_img_item .change_img{
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+

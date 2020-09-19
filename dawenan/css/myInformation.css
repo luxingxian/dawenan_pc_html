@@ -1,0 +1,89 @@
+
+/* 跟换头像 */
+.myHomepage_user_large_head #changeImg{
+    display: inline-block;
+    height: 40px;
+    position: relative;
+}
+
+.main_subject .myHomepage_box .myHomepage_user_large_head .change_user_head {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    font-size: 10px;
+    color: #f6f6f6;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: rgba(112, 109, 109, 0.397);
+    display: none;
+}
+
+.subject_middle {
+    display: block !important;
+    min-height: 700px;
+}
+
+
+/* 标题 */
+.subject_middle .information_title {
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 0;
+    font-family: Microsoft YaHei-Bold;
+}
+
+.subject_middle .information_title .submit {
+    float: right;
+    font-size: 14px;
+    color: #57cdd4;
+}
+
+
+/* 基本资料 */
+.subject_middle .information_basic {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 5px #f3f3f3;
+}
+
+.subject_middle .information_basic li {
+    border-bottom: 1px #eeeeee solid;
+    height: 78px;
+    line-height: 78px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.subject_middle .information_basic li .sex_style {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.subject_middle .information_basic li label {
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+
+.subject_middle .information_basic .information_margin_right {
+    margin-right: 60px;
+}
+.subject_middle .information_basic .qianming_left {
+    margin-left: -30px;
+}
+.subject_middle .information_basic li .information_input {
+    height: 70px;
+    width: 80%;
+    border: none;
+    font-size: 14px;
+    color: #cccccc;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+

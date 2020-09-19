@@ -1,0 +1,314 @@
+.main_subject .subject_box {
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+}
+
+
+/* 中间 */
+
+.subject_middle_box {
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+}
+
+.subject_middle {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    position: relative;
+    display: block !important;
+}
+
+.subject_middle .nav_bar {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #999999;
+}
+
+.subject_middle .nav_bar .current_nav {
+    color: #222222;
+}
+
+.subject_middle .generate_poster_box {
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    /* border: 1px red solid; */
+}
+
+.subject_middle .generate_poster_box .generate_poster_left {
+    width: 375px;
+    height: 100%;
+     box-shadow: 0 0 5px #f3f3f3;
+    transform: translate3d(0, -4px, 0); 
+}
+
+.subject_middle .generate_poster_box .generate_poster_left .user_head_box {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.subject_middle .generate_poster_box .generate_poster_left .user_generate_time {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_left .user_head_box .user_names {
+    margin-left: 10px;
+    color: #222222;
+}
+
+
+.subject_middle .generate_poster_box .generate_poster_left .project_logo_name {
+    color: #666666;
+    margin-top: 0px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_left .generate_time {
+    color: #999999;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+.subject_middle .generate_poster_box .generate_poster_left .generate_poster_left_foot {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-top: 1px #eeeeee solid;
+    cursor: pointer;
+    color: #000000;
+    display: block;
+}
+
+.subject_middle .generate_poster_box .generate_poster_left .generate_poster_img {
+    width: 375px;
+    /* max-height: 280px;
+    height: 280px; */
+}
+
+/* 模板1 */
+.subject_middle .generate_poster_box .generate_poster_left .generate_poster_text {
+    padding: 30px 30px 0 30px;
+    width: 315px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_left .generate_poster_text .chinese_text {
+    line-height: 24px;
+    font-size: 14px;
+    color: #222222;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right {
+    flex: 2;
+    margin-left: 70px;
+}
+
+#screenshot_area {
+    width: 375px;
+    height: 811px;
+    position: relative;
+}
+
+/* 模板一背景色 */
+.template_one_background {
+    background-color: #ffffff;
+}
+
+.template_one_background .English_text{
+    display: none;
+}
+
+/* 没有模板 */
+.no_tem_background{
+    background-color: #ffffff;
+}
+.no_tem_background .chinese_text{
+    text-align: center;
+}
+.no_tem_background .English_text{
+    display: none;
+}
+.no_tem_background .generate_poster_img{
+    display: none;
+}
+
+
+/* 模板二背景色 */
+.template_two_background {
+    background-color: #0d0707;
+    display: flex;
+    align-items: center;
+}
+
+/* 模板二中文文本位置 */
+.template_two_background .generate_poster_text {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    
+}
+
+.template_two_background .chinese_text_two {
+    font-size: 14px!important;
+    color: #f3f3f3!important;
+}
+.template_two_background .user_names_two{
+    color: #666666 !important;
+}
+
+.template_two_background .English_text {
+    margin-top: 10px;
+    bottom: 20px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #f3f3f3;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_template {
+    margin-bottom: 30px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_template .template_one {
+    background-image: url("../img/模板1.png");
+    background-size: contain;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_template .template_two {
+    background-image: url("../img/模板2.png");
+    background-size: contain;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_title {
+    font-size: 14px;
+    color: #222222;
+    line-height: 14px;
+    padding-left: 10px;
+    border-left: 4px #57cdd4 solid;
+    margin-bottom: 20px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_template .choice_template {
+    display: block;
+    margin-left: 15px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_template .choice_template .template {
+    width: 70px;
+    height: 90px;
+    display: inline-block;
+    margin-right: 20px;
+    border: 1px #99999917 solid;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .choice_information {
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .choice_information label {
+    margin-right: 30px;
+    cursor: pointer;
+    color: #666666;
+    font-size: 14px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .choice_information label span {
+    margin-left: 5px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box div {
+    display: flex;
+
+    margin-bottom: 20px;
+
+}
+
+
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box .change_img_title {
+    color: #666666;
+    margin: 0 20px 0 0;
+    display: inline-table;
+
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box .item_img {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box .item_img a{
+   margin: 0  10px 10px 0;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box a {
+    margin: 0 10px 0 0;
+    width: 60px;
+    height: 60px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box #select_other {
+    background-color: #f4f4f4;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box #select_other .iconicon-test {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box #select_other input {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .change_img_box a img {
+    width: 60px;
+    height: 60px;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right a {
+    position: relative;
+    display: inline-block;
+}
+
+.select_img {
+    border: 1px #57cdd4 solid;
+}
+
+.subject_middle .generate_poster_box .generate_poster_right a .iconsanjiaoxuanzhong {
+    display: none
+}
+
+.subject_middle .generate_poster_box .generate_poster_right .select_icon {
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+    color: rgb(87, 205, 212);
+    font-size: 25px;
+    display: block !important
+}
